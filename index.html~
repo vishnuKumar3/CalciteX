@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CalciteX</title>
+    <link rel="stylesheet" href="images/logo.jpeg"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--header-->
+	<div id="header">
+
+            <!--<div class="logo">
+                <img src="logoCalcitex.JPG">
+            </div>-->
+
+            <ul>
+                <a href="#header">Home</a>
+                <a href="#aboutus">AboutUs</a>
+                <a href="#services">Services</a>
+                <a href="#worx">Work</a>
+                <a href="#skills">Skills</a>
+                <a href="#works">Plan</a>
+		<a href="#pricing">Pricing</a>
+                <a href="#contact">ContactUs</a>
+            </ul>
+
+		<div class="mainBox">
+            <div class="desc">
+                <h1>WE LOVE DESIGN </h1>
+            </div>
+
+            <div class="button">
+                
+                <a href="#" class="btn">LEARN MORE</a>
+            </div>
+		</div>
+
+	</div>
+
+	<!--About us-->
+<div id="aboutus">
+ <h1 class="h1" style="color:#000;font-weight:bolder;font-size:50px;">ABOUT<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;"> US</span></h1>
+        <div class="cards">
+            <div class="card1">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>CLEAN & MODERN</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias laboriosam quos praesentium repellendus veritatis?</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card1">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-area-chart" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>UNIQUE DESIGN</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias laboriosam quos praesentium repellendus veritatis?</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card1">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-wrench" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>PIXEL PROJECT</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias laboriosam quos praesentium repellendus veritatis?</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card2">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-users" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>COOL STAFF</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias laboriosam quos praesentium repellendus veritatis?</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card2">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-laptop" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>RESPONSIVE</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias laboriosam quos praesentium repellendus veritatis?</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+            <div class="card2">
+                <div class="top">
+                    <div class="logo"><i class="fa fa-headphones" aria-hidden="true"></i></div>
+                    <div class="tlte"><h3>GREAT SUPPORT</h2></div>
+                </div>
+                <div class="middle">
+                       <p class="mid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum alias laboriosam quos praesentium repellendus veritatis?</p> 
+                </div>
+                <div class="bottom">
+                    <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>     
+            </div>
+        </div>
+    </div>
+   
+	<!--Our services-->
+        <section id="services">
+        <div class="services">
+            <h1 class="heading" style="color:rgb(214, 199, 206); text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>
+            <div class="cen">
+                <div class="service">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>UI/UX DESIGN</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa provident modi nihil in debitis commodi officiis assumenda similique labore?</p>
+                </div>
+
+                <div class="service">
+                    <i class="fas fa-tv"></i>
+                    <h2>WEB DEVELOPMENT</h2>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam deleniti autem qui, obcaecati expedita quisquam quam laboriosam exercitationem rerum.</p>
+                </div>
+
+                <div class="service">
+                    <i class="fab fa-android"></i>
+                    <h2>MOBILE APPS</h2>
+                    <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio asperiores ipsa soluta nobis nulla nostrum, quos voluptas sapiente officia mollitia?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- work start-->
+	<div id="worx" style="margin-top:50px;">
+ <h1 class="h1" style="color:#000;font-weight:bolder;font-size:50px;">OUR WO<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span>X.!</h1>
+	<div class="worx">
+		<div>
+			<ul>
+			<li><img src="icons/work.svg"/> All worx</li>
+			<li><img src="icons/time.png"/> Support</li>
+			<li><img src="icons/design.png"/> UI design</li>
+			<li><img src="icons/app.png"/> App development</li>
+			<li><img src="icons/web.png"/> Web development</li>
+			</ul>
+		</div>
+		<div>
+		<img src="images/work.jpeg">
+		<img src="images/work_time.jpeg">
+		<img src="images/work_support.jpeg">
+		<img src="images/work_app.jpeg">
+		<img src="images/work_web.jpeg">
+		<img src="images/work_design.jpeg">
+		</div>
+	</div>
+	</div>
+    <!---skills start-->
+	<div id="skills">
+    <h1 class="heading" style="color:BLACK; text-align: center; ">ABOUT SK<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">I</span>LLS</h1>
+    <div id="skills" class="skills">
+                <div class="skill-bars">
+                    <div class="bar">
+                        <div class="info">
+                            <span>PHOTOSHOP</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>INDESIGN</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>ILLUSTRATOR</span>
+                        </div>
+                        <div class="progress-line jquery">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="info">
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+             	</div>
+
+        <div class="accordion">
+            <div class="contentBx">
+                <div class="label">UNIQUE DESIGN</div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore aspernatur iusto perferendis soluta! Non dolore enim aspernatur nesciunt. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate tempora
+                        facilis molestiae facere atque nesciunt accusamus iste natus. Magni.</p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">GREAT SERVICE</div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore aspernatur iusto perferendis soluta! Non dolore enim aspernatur nesciunt. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates facilis
+                        similique recusandae consequuntur eaque? Ut harum ab vitae deserunt molestiae eaque mollitia, officiis itaque voluptas, soluta voluptate quae culpa?</p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">EXPERIENCE TEAM</div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore aspernatur iusto perferendis soluta! Non dolore enim aspernatur nesciunt. Mollitia! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque hic inventore
+                        ratione molestias cumque nulla omnis, debitis quibusdam delectus exercitationem repellat rerum laudantium optio. Vitae debitis voluptatem ipsum suscipit fugiat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+
+        for (i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function() {
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+	</div>
+    <!--skills end-->
+    <!--Our work start-->
+    <section id="works">
+        <div class="works">
+            <h1 class="heading" style="color:BLACK; text-align: center; ">HOW<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;"> WE</span> WORK</h1>
+            <div class="cen">
+                <div class="work">
+                    <i class="fas fa-edit"></i>
+                    <h2>PLAN</h2>
+                </div>
+
+                <div class="work">
+                    <i class="fas fa-lightbulb"></i>
+                    <h2>IDEA</h2>
+                </div>
+
+                <div class="work">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h2>SKETCH</h2>
+                </div>
+                <div class="work">
+                    <i class="fas fa-magic"></i>
+                    <h2>DISIGN</h2>
+                </div>
+
+                <div class="work">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>DEVELOP</h2>
+                </div>
+
+                <div class="work">
+                    <i class="far fa-check-circle"></i>
+                    <h2>LAUNCH</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--our work ends-->
+    <!--clints-->
+  <!--  <h1 class="heading" style="color:black; text-align: center; font-size: 3rem; font-weight: strong bolder; ">OUR CLIE<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">N</span>T</h1>
+    <div class="client">
+        <ul>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client1.png" alt="client1"></a>
+                </div>
+            </li>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client2.png" alt="client2"></a>
+                </div>
+            </li>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client3.png" alt="client3"></a>
+                </div>
+            </li>
+            <li>
+                <div class="cli">
+                    <a href="#"><img src="images/client4.png" alt="client4"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--cliensts end-->
+    <!--pricing table -->
+    <section id="pricing" class="price-table">
+        <div class="container">
+            <h1 class="heading" style="color:black; text-align: center; font-size: 3rem; font-weight: strong bolder; ">PRIC<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">ING</span> TABLE</h1>
+            <div class="price_box">
+                <div class="price">
+		 <div class="price-head">
+                        <h2>Basic</h2>
+                        <p>$05/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>1GB Storage</li>
+                            <li style="background-color: gray; color: white;">1GB Bandwidth</li>
+                            <li>1 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">1 Sub Domain</li>
+                            <li>10 Email</li>
+                            <li style="background-color: gray; color: white;">1 Database</li>
+                            <li>1 Domain</li>
+                            <li style="background-color: gray; color: white;">No Support</li>
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div> 
+                <div class="price">
+		<div class="price-head">
+                        <h2>Personal</h2>
+                        <p>$10/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>5GB Storage</li>
+                            <li style="background-color: gray; color: white;">5GB Bandwidth</li>
+                            <li>5 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">50 Sub Domain</li>
+                            <li>50 Email</li>
+                            <li style="background-color: gray; color: white;">50 Database</li>
+                            <li>2 Domain</li>
+                            <li style="background-color: gray; color: white;">Support</li>
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div>  
+                <div class="price">
+		 <div class="price-head">
+                        <h2>Professional</h2>
+                        <p>$15/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>10GB Storage</li>
+                            <li style="background-color: gray; color: white;">10GB Bandwidth</li>
+                            <li>10 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">100 Sub Domain</li>
+                            <li>100 Email</li>
+                            <li style="background-color: gray; color: white;">100 Database</li>
+                            <li>5 Domain</li>
+                            <li style="background-color: gray; color: white;">Support</li>
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div>  
+                <div class="price">
+		 <div class="price-head">
+                        <h2>Business</h2>
+                        <p>$20/MON</p>
+                    </div>
+                    <div class="price-content">
+                        <ul>
+                            <li>50GB Storage</li>
+                            <li style="background-color: gray; color: white;">100GB Bandwidth</li>
+                            <li>50 Addon Domains</li>
+                            <li style="background-color: gray; color: white;">100 Sub Domain</li>
+                            <li>500 Email</li>
+                            <li style="background-color: gray; color: white;">500 Database</li>
+                            <li>10 Domain</li>
+                            <li style="background-color: gray; color: white;">Support</li>
+                        </ul>
+                    </div>
+                    <div class="price-bottom">
+                        <a href="#" class="buy-btn">Select Plan</a>
+                    </div>
+		</div>                
+            </div>
+
+        </div>
+    </section>
+    <!--pricing table ends-->
+    <!--contactus-->
+    <div id="contact">
+        <br><br>
+        <div class="contact">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <div style="font-size: 40px;margin-bottom:30px;">Contact Us</div>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, adipisci.</p>
+
+                    <br>
+                    <div>Email: company_email@com</div>
+		    <br>
+                    <div>Phone: 361-688-5824</div>
+                    <br>		
+                    <div>Address: 4826 White Avenue,Corpus Christi, Texas</div>
+		 
+                </div>
+                <div class="contact-form">
+                    <form class="contact" action="" method="post">
+                        <div class="nm">
+                            <span style="color:lightgreen;">Your Name <input type="text" name="name" class="text-box"  required></span>
+                            <span style="color:lightgreen;">Your Email<input type="email" name="email" class="text-box"  required></span>
+                        </div>
+                        <span style="color:lightgreen;">Message</span><textarea name="msg" rows="5" required></textarea>
+                        <input type="submit" name="submit" class="send-btn" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+            <div class="copy">
+           	<p style="color:white; padding-left:2px;">Copyright &#169 2018 Chen,Yi-Ya. </p>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <!--contactus end-->
+</body>
+
+</html>
