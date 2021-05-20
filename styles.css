@@ -83,6 +83,7 @@ display:flex;
 
 #header{
 background:black;
+background-image:none;
 width:100%;
 margin:0%;
 }

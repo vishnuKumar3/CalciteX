@@ -22,7 +22,7 @@ background-size:100% 100%;
 background-attachment:fixed;
 }
 
-.navbar{flex-direction:column;justify-content:space-between;align-items:center;padding-top:50px;display:none;}
+.navbar{flex-direction:column;justify-content:space-between;align-items:center;padding-top:20px;display:none;}
 .navbar p:nth-child(1){font-size:30px;color:white;text-shadow:1px 2px 2px white,3px 4px 5px darkblue;}
 .navbar p:nth-child(2){font-style:italic;color:white;}
 
@@ -83,6 +83,7 @@ display:flex;
 
 #header{
 background:black;
+background-image:none;
 width:100%;
 margin:0%;
 }
