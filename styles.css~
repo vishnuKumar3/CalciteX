@@ -16,11 +16,17 @@
 
 #header{
 height:100vh;
-margin-bottom:20px;
+margin-bottom:30px;
 background-image:url('images/background.jpg');
 background-size:100% 100%;
 background-attachment:fixed;
 }
+
+.navbar{flex-direction:column;justify-content:space-between;align-items:center;padding-top:50px;display:none;}
+.navbar p:nth-child(1){font-size:30px;color:white;text-shadow:1px 2px 2px white,3px 4px 5px darkblue;}
+.navbar p:nth-child(2){font-style:italic;color:white;}
+
+
 
 #header ul{
 display:flex;
@@ -62,12 +68,45 @@ transition:0.2s;
 }
 
 #header .mainBox .button a:hover{
-color:black;
 color:rgb(255,2,108); 
 }
 
 #header .mainBox .desc{
 margin-top:15%;
+}
+
+@media (max-width:1000px){
+
+.navbar{
+display:flex;
+}
+
+#header{
+background:black;
+width:100%;
+margin:0%;
+}
+
+#header .mainBox{
+margin-top:40%;
+color:white;
+}
+
+#header .mainBox .button{
+padding:10px 20px 10px 20px;
+display:inline;
+border:1px solid white;
+}
+
+#header .mainBox .button a{
+color:white;
+margin-left:0%;
+}
+
+#header ul{
+display:none;
+}
+
 }
 
 
