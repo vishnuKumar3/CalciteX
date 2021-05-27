@@ -31,15 +31,29 @@ background-attachment:fixed;
 #header ul{
 display:flex;
 flex-direction:row;
-justify-content:center;
+justify-content:start;
+}
+
+#header ul #links{
+display:flex;
+flex-direction:row;
+justify-content:start;
+width:80%;
 padding-top:50px;
+}
+
+#header ul div:nth-child(1) img{
+padding-top:0px;
+width:25%;
+height:100px;
 }
 
 
 
-#header ul a{
+#header ul #links a{
+height:30px;
 color:black;
-margin-left:3%;
+margin-left:4%;
 }
 
 #header .mainBox .button{
@@ -59,7 +73,7 @@ flex-direction:column;
 align-items:center;
 }
 
-#header ul a:hover{
+#header ul #links a:hover{
 color:rgb(255,2,108); 
 border-bottom:2px solid rgb(255,2,108);
 border-top:2px solid rgb(255,2,108);
@@ -68,7 +82,7 @@ transition:0.2s;
 }
 
 #header .mainBox .button a:hover{
-color:rgb(255,2,108); 
+color:white; 
 }
 
 #header .mainBox .desc{

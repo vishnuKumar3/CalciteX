@@ -28,14 +28,21 @@
 	</div>
 
             <ul>
+		<div id="logo">
+		<img src="images/logo.jpeg">
+		</div>
+		<div>
                 <a href="#header">Home</a>
                 <a href="#aboutus">AboutUs</a>
                 <a href="#services">Services</a>
                 <a href="#worx">Work</a>
                 <a href="#skills">Skills</a>
                 <a href="#works">Plan</a>
-		<a href="#pricing">Pricing</a>
+		<!--<a href="#pricing">Pricing</a>-->
                 <a href="#contact">ContactUs</a>
+		</div>
+		<div>
+		</div>
             </ul>
 
 		<div class="mainBox">
@@ -45,7 +52,7 @@
 
             <div class="button">
                 
-                <a href="#" class="btn">LEARN MORE</a>
+                <a href="#aboutus" class="btn">LEARN MORE</a>
             </div>
 		</div>
 
@@ -325,6 +332,7 @@
     </div>
     <!--cliensts end-->
     <!--pricing table -->
+<!--
     <section id="pricing" class="price-table">
         <div class="container">
             <h1 class="heading" style="color:black; text-align: center; font-size: 3rem; font-weight: strong bolder; ">PRIC<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">ING</span> TABLE</h1>
@@ -417,6 +425,7 @@
 
         </div>
     </section>
+-->
     <!--pricing table ends-->
     <!--contactus-->
     <div id="contact">
