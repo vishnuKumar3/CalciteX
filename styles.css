@@ -12,6 +12,11 @@
     text-transform: capitalize;
     scroll-behavior:smooth;
 }
+
+body,html{
+height:100%;
+}
+
 /*header*/
 
 #header{
@@ -304,6 +309,23 @@ transition:1s;
 
 /*our services*/
 
+
+#ourServices #main{border:1px solid black;padding:10px;width:120px;color:black;font-weight:bolder;border-radius:5px;background:white;text-align:center;margin-left:100px;transition:2s;}
+#ourServices #main:hover{background:red;transition:1s;border-color:red;color:white;}
+#ourServices .services{border:1px solid blue;padding:10px;width:50px;border-radius:100px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
+#ourServices .services:hover{background:blue;}
+#ourServices #one0{transform:rotate(60deg) translateY(250px) rotate(-60deg);}
+#ourServices #one1{transform:rotate(120deg) translateY(300px) rotate(-120deg);}
+#ourServices #one2{transform:rotate(180deg) translateY(350px) rotate(-180deg);}
+#ourServices #one3{transform:rotate(220deg) translateY(350px) rotate(-220deg);}
+#ourServices #one4{transform:rotate(270deg) translateY(100px) rotate(-270deg);}
+@keyframes servicesAnim{from{opacity:0;} to{opacity:1;}}
+
+@keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
+@keyframes opacity1Anim{from{opacity:0;} to{opacity:1;}}
+#ourServices #heading{font-weight:bolder;text-transform:uppercase;font-size:30px;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding-top:2px;}
+#ourServices #innercontent{font-variant:small-caps;font-size:20px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
+
 .services {
     padding-bottom:50px;
 	padding-top:50px;
@@ -504,7 +526,7 @@ margin-left:5%;
     transform-origin: left;
     border-radius: 10px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.8);
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+
 }
 
 @keyframes animate {
