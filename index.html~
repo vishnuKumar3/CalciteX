@@ -13,8 +13,29 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
-
-<body>
+<style>
+@keyframes zoom{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+</style>
+<script>
+function myfunction(){
+var h=document.getElementsByClassName("card1");
+var h1=document.getElementsByClassName("card2");
+if(h[0].offsetTop-document.documentElement.scrollTop<200){
+for(i=0;i<3;i++){
+h[i].style.animationName="zoom";
+h[i].style.animationDuration="1s";
+h[i].style.animationFillMode="both";
+}}
+if(h1[0].offsetTop-document.documentElement.scrollTop<200){
+for(i=0;i<3;i++){
+h1[i].style.animationName="zoom";
+h1[i].style.animationDuration="1s";
+h1[i].style.animationFillMode="both";
+}
+}
+}
+</script>
+<body onscroll="myfunction()">
 	<!--header-->
 	<div id="header">
 
@@ -29,7 +50,7 @@
 
             <ul>
 		<div id="logo">
-		<img src="images/logo.jpeg">
+		<img src="images/icon1.jpeg">
 		</div>
 		<div id="links">
                 <a href="#header">Home</a>
@@ -172,7 +193,7 @@
                     <p>With growing demand in this digital world we at CalciteX Cybernetics  committed to provide a mobile app which meets your business needs with an attractive price tag in mind.</p>
                 </div>
                 <div class="service">
-                    <img src="icons/marketing.png">
+                    <i class="fab fa-android"></i>
                     <h2>DIGITAL MARKETING</h2>
                     <br>
                     <p>We at CalciteX cybernetics provide businesses of all sizes with an opportunity to market their brand 24/7 at a low cost. From startups to medium-sized enterprises to multiple-location companies</p>
@@ -455,16 +476,16 @@
 		    <br>
                     <div>Phone: 8179033458</div>
                     <br>		
-                    <div>Koushik Enclave,Bharathi Nagar Colony,Temple Alwal,Secunderabad,India</div>
+                    <div>Address: Koushik Enclave,Bharathi Nagar Colony,Temple Alwal,Secunderabad,India</div>
 		 
                 </div>
                 <div class="contact-form">
                     <form class="contact" action="" method="post">
                         <div class="nm">
-                            <span style="color:lightgreen;">Your Name <input type="text" name="name" class="text-box"  required></span>
-                            <span style="color:lightgreen;">Your Email<input type="email" name="email" class="text-box"  required></span>
+                            <span style="color:rgb(255,2,108);">Your Name <input type="text" name="name" class="text-box"  required></span>
+                            <span style="color:rgb(255,2,108);">Your Email<input type="email" name="email" class="text-box"  required></span>
                         </div>
-                        <span style="color:lightgreen;">Message</span><textarea name="msg" rows="5" required></textarea>
+                        <span style="color:rgb(255,2,108);">Message</span><textarea name="msg" rows="5" required></textarea>
                         <input type="submit" name="submit" class="send-btn" value="Submit">
                     </form>
                 </div>

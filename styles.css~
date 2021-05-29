@@ -31,25 +31,26 @@ background-attachment:fixed;
 #header ul{
 display:flex;
 flex-direction:row;
-justify-content:start;
+justify-content:space-around;
 position:fixed;
 width:100%;
 background:white;
+padding-top:0px;
 }
 
 #header ul #links{
 display:flex;
 flex-direction:row;
 justify-content:start;
-width:80%;
-margin-left:-10%;
+margin-left:10%;
 padding-top:20px;
 }
 
 #header ul div:nth-child(1) img{
 padding-top:0px;
-width:20%;
-height:70px;
+width:50%;
+height:60px;
+transform:scale(1.1);
 }
 
 
@@ -99,7 +100,7 @@ display:flex;
 flex-direction:row;
 justify-content:start;
 width:80%;
-margin-left:0%;
+margin-left:20%;
 padding-top:20px;
 }
 }
@@ -210,7 +211,8 @@ margin-right:2%;
     display: flex;
 }
 .card1{
-    background-color: #fffff1;
+	opacity:0;
+    background-color:rgb(248,248,248);
     width: 30%;
     margin-left: 3%;
     margin-top: 5%;
@@ -251,7 +253,7 @@ transition:1s;
 }
 
 .card2{
-    background-color: #fffff1;
+    background-color:rgb(248,248,248);
     width: 30%;
     margin-left: 3%;
     margin-top: 5%;
@@ -304,7 +306,7 @@ transition:1s;
 .services {
     padding-bottom:50px;
 	padding-top:50px;
-    background-color: #fff;
+    background-color: #000;
     text-align: center;
 }
 
@@ -963,7 +965,6 @@ justify-content:space-around;
 
 .contact-form .text-box {
     background: #000;
-    color: #fff;
     border: none;
     width: calc(100% - 10px);
     display: flex;
@@ -973,8 +974,7 @@ justify-content:space-around;
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    opacity: 0.9;
-    border: 2px solid lightgreen;
+    border: 2px solid rgb(255,2,108);
 }
 
 .nm {
@@ -993,19 +993,18 @@ justify-content:space-around;
     display: flex;
     padding: 12px;
     font-size: 15px;
-    min-height: 50px;
-    max-height: 70px;
+    min-height: 300px;
+    max-height: 250px;
     resize: vertical;
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    opacity: 0.9;
-    border: 2px solid lightgreen;
+    border: 2px solid rgb(255,2,108);
 }
 
 .contact-form .send-btn {
     float: right;
-    background: rgb(52, 201, 109);
+    background:rgb(255,2,108);
     color: #000;
     border: none;
     border-radius: 50px;
@@ -1021,7 +1020,7 @@ justify-content:space-around;
 }
 
 .contact-form .send-btn:hover {
-    background: #0582E3;
+    background: #fff;
 }
 
 @media screen and (max-width: 768px) {
