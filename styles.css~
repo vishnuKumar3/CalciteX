@@ -311,6 +311,7 @@ transition:1s;
 
 
 #ourServices #main{border:1px solid black;padding:10px;width:120px;color:black;font-weight:bolder;border-radius:5px;background:white;text-align:center;margin-left:100px;transition:2s;}
+#ourServices #mainService{display:flex;justify-content:space-between;}
 #ourServices #main:hover{background:red;transition:1s;border-color:red;color:white;}
 #ourServices .services{border:1px solid blue;padding:10px;width:50px;border-radius:100px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
 #ourServices .services:hover{background:blue;}
@@ -325,6 +326,13 @@ transition:1s;
 @keyframes opacity1Anim{from{opacity:0;} to{opacity:1;}}
 #ourServices #heading{font-weight:bolder;text-transform:uppercase;font-size:30px;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding-top:2px;}
 #ourServices #innercontent{font-variant:small-caps;font-size:20px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
+
+@media only screen and (max-width:1000px){
+#ourServices #mainService{
+display:flex;
+flex-direction:column;
+justify-content:space-between;}
+}
 
 .services {
     padding-bottom:50px;
