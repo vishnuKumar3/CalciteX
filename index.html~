@@ -15,14 +15,22 @@
 </head>
 <style>
 @keyframes zoom{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes zoomBox{from{transform:scale(0);} to{transform:scale(1);}}
 </style>
 <script>
 function myfunction(){
+var aboutBox=document.getElementsByClassName("doubleBox");
 var navbar=document.getElementById("ul");
 var progress=document.getElementsByClassName("progress-line");
 var about=document.getElementById("aboutus");
 if(about.offsetTop-document.documentElement.scrollTop<100){
 navbar.style.background="black";
+for(i=0;i<aboutBox.length;i++){
+aboutBox[i].style.animationName="zoomBox";
+aboutBox[i].style.animationDuration="2s";
+aboutBox[i].style.animationDelay=i/2+"s";
+aboutBox[i].style.animationFillMode="both";
+}
 }
 else{
 navbar.style.background="transparent";
@@ -35,6 +43,14 @@ progress[i].style.animation="animate 1s cubic-bezier(1, 0, 0.5, 1) forwards";
 }
 
 function ServiceFunction(){
+var heading=document.getElementById("heading");
+var content=document.getElementById("content");
+heading.innerHTML="our service";
+heading.style.whiteSpace="normal";
+heading.style.fontSize="20px";
+heading.style.marginLeft="2%";
+heading.style.marginTop="30%";
+content.style.marginRight="5%";
 var main=document.getElementById("main");
 var ele=document.getElementsByClassName("services");
 for(i=0;i<ele.length;i++){
@@ -131,13 +147,13 @@ Our modest list of services to
 suit all your digital needs
 </div>
 
-<div id="doubleBox">
+<div class="doubleBox">
 
 <div id="contentBox">
 <div style="width:30%;">
 <i class="fa fa-heart" style="font-size:70px;color:white;"></i>
 </div>
-<div id="mainBox">
+<div class="mainBox">
 <h2 >Clean & Modern:</h2>
 A fabulous collection of unique design ideas with custom-made interfaces.
 </div>
@@ -146,19 +162,19 @@ A fabulous collection of unique design ideas with custom-made interfaces.
 <div style="width:30%;">
 <i class="fa fa-area-chart" style="font-size:70px;color:white;"></i>
 </div>
-<div id="mainBox">
+<div class="mainBox">
 <h2>Unique Design: </h2>
 Modern, Industrial, Clean design….and the list goes on. 
 </div>
 </div>
 </div>
 
-<div id="doubleBox">
+<div class="doubleBox">
 <div id="contentBox">
 <div style="width:30%;">
 <i class="fa fa-wrench" style="font-size:70px;color:white;"></i>
 </div>
-<div id="mainBox">
+<div class="mainBox">
 <h2>Pixel Project:</h2>
 If owning a piece of history is what you desire, Pixels Projects are the ones you need. 
 </div>
@@ -167,7 +183,7 @@ If owning a piece of history is what you desire, Pixels Projects are the ones yo
 <div style="width:30%;">
 <i class="fa fa-users" style="font-size:70px;color:white;"></i>
 </div>
-<div id="mainBox">
+<div class="mainBox">
 <h2>Cool Staff:</h2>
 Let’s be honest, everyone looks for a “cool” staff to work with.
 </div>
@@ -175,12 +191,12 @@ Let’s be honest, everyone looks for a “cool” staff to work with.
 </div>
 
 
-<div id="doubleBox">
+<div class="doubleBox">
 <div id="contentBox">
 <div style="width:30%;">
 <i class="fa fa-laptop" style="font-size:70px;color:white;"></i>
 </div>
-<div id="mainBox">
+<div class="mainBox">
 <h2>Responsive: </h2>
 Responsiveness is the essential mix of flexible grids and layouts, images, and an intelligent use of media queries.
 </div>
@@ -189,7 +205,7 @@ Responsiveness is the essential mix of flexible grids and layouts, images, and a
 <div style="width:30%;">
 <i class="fa fa-headphones" style="font-size:70px;color:white;"></i>
 </div>
-<div id="mainBox">
+<div class="mainBox">
 <h2>Great Support:</h2>
 Trouble-free support is what we offer.
 </div>
@@ -360,9 +376,10 @@ Trouble-free support is what we offer.
  <h1 class="heading" id="ourServicesheading" style="background:black;color:rgb(214, 199, 206);padding-top:50px; text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>
 	<div id="ourServices" style="background:black;height:100%;padding-top:10px">
 	<div id="mainService">
-	<div id="content" style="width:30%;height:400px;border-radius:10px;margin-top:0px;margin-left:2%;border:1px solid transparent;">
+	<div id="content" style="width:30%;height:400px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
 	<div id="heading" >
-	Our Services
+	Our 
+	Services
 	</div>
 	<div id="innercontent">
 	</div>
