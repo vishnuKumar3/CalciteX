@@ -39,7 +39,7 @@ flex-direction:row;
 justify-content:space-around;
 position:fixed;
 width:100%;
-background:white;
+background:black;
 padding-top:0px;
 }
 
@@ -62,7 +62,7 @@ transform:scale(1.1);
 
 #header ul #links a{
 height:30px;
-color:black;
+color:white;
 margin-left:4%;
 }
 
@@ -311,11 +311,14 @@ transition:1s;
 
 
 #ourServices #main{border:1px solid transparent;color:black;font-weight:bolder;border-radius:5px;text-align:center;margin-left:100px;transition:2s;}
-#ourServices #mainService{display:flex;justify-content:space-between;}
+#ourServices #mainService{margin-top:0px;display:flex;justify-content:space-between;}
+@media only screen and (min-width:1500px){
+#ourServices #main{margin-top:10%;}
+}
 #ourServices .services{border:1px solid transparent;padding:10px;width:0px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
 #ourServices #one0{transform:rotate(60deg) translateY(200px) rotate(-60deg);}
 #ourServices #one1{transform:rotate(120deg) translateY(400px) rotate(-120deg);}
-#ourServices #one2{transform:rotate(170deg) translateY(550px) rotate(-170deg);}
+#ourServices #one2{transform:rotate(170deg) translateY(600px) rotate(-170deg);}
 #ourServices #one3{transform:rotate(200deg) translateY(600px) rotate(-200deg);}
 #ourServices #one4{transform:rotate(210deg) translateY(350px) rotate(-210deg);}
 @keyframes servicesAnim{from{opacity:0;} to{opacity:1;}}
