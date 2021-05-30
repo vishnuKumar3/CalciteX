@@ -18,9 +18,15 @@
 </style>
 <script>
 function myfunction(){
-
+var navbar=document.getElementById("ul");
 var progress=document.getElementsByClassName("progress-line");
-
+var about=document.getElementById("aboutus");
+if(about.offsetTop-document.documentElement.scrollTop<100){
+navbar.style.background="black";
+}
+else{
+navbar.style.background="transparent";
+}
 if(progress[0].offsetTop-document.documentElement.scrollTop<300){
 for(i=0;i<progress.length;i++){
 progress[i].style.animation="animate 1s cubic-bezier(1, 0, 0.5, 1) forwards";
@@ -65,21 +71,11 @@ inContent.innerHTML=content[number];}
 </script>
 <body onscroll="myfunction()">
 	<!--header-->
-	<div id="header">
-
-            <!--<div class="logo">
-                <img src="logoCalcitex.JPG">
-            </div>-->
-
-	    <div class="navbar">
-		<p>Calcite X</p>
-		<p>Shaping the Uncut</p>
-	</div>
-
-            <ul>
-		<div id="logo">
+	<div id="navbar">
+ 	<ul id="ul">
+		<!--<div id="logo">
 		<img src="images/icon1.jpeg">
-		</div>
+		</div>-->
 		<div id="links">
                 <a href="#header">Home</a>
                 <a href="#aboutus">AboutUs</a>
@@ -93,8 +89,20 @@ inContent.innerHTML=content[number];}
 		<div>
 		</div>
             </ul>
+	</div>
+	<div id="header">
 
-		<div class="mainBox">
+            <!--<div class="logo">
+                <img src="logoCalcitex.JPG">
+            </div>-->
+
+	    <div class="navbar">
+		<p>Calcite X</p>
+		<p>Shaping the Uncut</p>
+	</div>
+
+
+	<!--	<div class="mainBox">
             <div class="desc">
                 <h1>WE LOVE DESIGN </h1>
             </div>
@@ -103,7 +111,7 @@ inContent.innerHTML=content[number];}
                 
                 <a href="#aboutus" class="btn">LEARN MORE</a>
             </div>
-		</div>
+		</div>-->
 
 	</div>
 
