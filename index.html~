@@ -43,8 +43,6 @@ progress[i].style.animation="animate 1s cubic-bezier(1, 0, 0.5, 1) forwards";
 
 function ServiceFunction(){
 var main=document.getElementById("main");
-main.style.background="red";
-main.style.color="white";
 var ele=document.getElementsByClassName("services");
 for(i=0;i<ele.length;i++){
 ele[i].style.display="block";
@@ -285,23 +283,23 @@ inContent.innerHTML=content[number];
 	</div>
 
 	<div style="width:40%;margin-left:20%;margin-top:300px;">
-	<button onclick="ServiceFunction()" id="main">
-	Our services
-	</button>
+
+	<img onclick="ServiceFunction()" id="main" style="width:100px;height:100px;border-radius:10%;" src="icons_color/services.png">
+
 	<div >
-	<img id="one0" onmouseover="display(event)" class="services" style="background:white;width:50px;height:50px;border-radius:10%;" src="icons_color/app.png">
+	<img id="one0" onmouseover="display(event)" class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/app.png">
 	</div>
 	<div>
-	<img id="one1" onmouseover="display(event)"  class="services" style="background:white;width:50px;height:50px;border-radius:10%;" src="icons_color/web.png"/>
+	<img id="one1" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/web.png"/>
 	</div>
 	<div>
-	<img id="one2" onmouseover="display(event)"  class="services" style="background:white;width:50px;height:50px;border-radius:10%;" src="icons_color/marketing.png"/>
+	<img id="one2" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/marketing.png"/>
 	</div>
 	<div>
-	<img id="one3" onmouseover="display(event)"  class="services" style="background:white;width:50px;height:50px;border-radius:10%;" src="icons_color/design.png"/>
+	<img id="one3" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/design.png"/>
 	</div>
 	<div>
-	<img id="one4" onmouseover="display(event)"  class="services" style="background:white;width:50px;height:50px;border-radius:10%;" src="icons_color/work.png"/>
+	<img id="one3" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/design.png"/>
 	</div>
 	</div>
 	</div>
