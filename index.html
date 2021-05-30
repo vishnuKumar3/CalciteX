@@ -39,19 +39,18 @@ ele[i].style.animationDelay=(i/5)+"s";
 }
 }
 
-var headings=["App development","web development","Digital Marketing","UI design","Support"];
+var headings=["UI design","web development","App development","Digital Marketing","Support"];
 var content=[
-"With growing demand in this digital world we at CalciteX Cybernetics  committed to provide a mobile app which meets your business needs with an attractive price tag in mind.",
-"CalciteX cybernetics provides you worlds trending and best technology. While it comes to Web Development its our best and most demanding service with 100% gurranted satisfaction",
-"We at CalciteX cybernetics provide businesses of all sizes with an opportunity to market their brand 24/7 at a low cost. From startups to medium-sized enterprises to multiple-location companies",
 "A fabulous collection of unique design ideas with custom-made interfaces is a true work of design and style. With an abundance of unique design styles, we offer you customization and Modern style.",
+"CalciteX cybernetics provides you worlds trending and best technology. While it comes to Web Development its our best and most demanding service with 100% gurranted satisfaction",
+"With growing demand in this digital world we at CalciteX Cybernetics  committed to provide a mobile app which meets your business needs with an attractive price tag in mind.",
+"We at CalciteX cybernetics provide businesses of all sizes with an opportunity to market their brand 24/7 at a low cost. From startups to medium-sized enterprises to multiple-location companies",
 "Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly."
 ]
+var number="";
 function display(event){
-
-var number=event.target.id;
-var len=number.length-1;
-number=number.charAt(len)
+if(event.target.id.charAt(event.target.id.length-1)!=number){
+number=event.target.id.charAt(event.target.id.length-1);
 var ele=document.getElementById("heading");
 var inContent=document.getElementById("innercontent");
 if(ele.style.animationName!="opacityAnim"){ele.style.animationName="opacityAnim";inContent.style.animationName="opacityAnim";}
@@ -59,7 +58,7 @@ else{ele.style.animationName="opacity1Anim";inContent.style.animationName="opaci
 ele.style.animationDuration="2s";
 inContent.style.animationDuration="2s";
 ele.innerHTML=headings[number];
-inContent.innerHTML=content[number];
+inContent.innerHTML=content[number];}
 
 }
 
@@ -363,22 +362,30 @@ Trouble-free support is what we offer.
 
 	<div style="width:40%;height:150%;margin-left:20%;margin-top:300px;">
 
-	<img onclick="ServiceFunction()" id="main" style="width:100px;height:100px;border-radius:10%;" src="icons_color/services.png">
+	<div  onclick="ServiceFunction()" id="main" style="width:100px;height:100px;border-radius:10%;display:flex;flex-direction:column;" >
+	<img style="width:100%;height:100%;" src="icons_color/services.png">
+	<div style="color:white;">Our Services</div>
+	</div>
 
-	<div>
-	<img id="one0" onmouseover="display(event)" class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/app.png">
+	<div id="one0" onmouseover="display(event)" class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp0" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/design.png">
+	<div id="temp0" id="contentService">Design</div>
 	</div>
-	<div>
-	<img id="one1" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/web.png"/>
+	<div id="one1" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp1" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/web.png"/>
+	<div id="temp1" id="contentService">Web</div>
 	</div>
-	<div>
-	<img id="one2" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/marketing.png"/>
+	<div id="one2" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp2" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/app.png"/>
+	<div id="temp2" id="contentService">App</div>
 	</div>
-	<div>
-	<img id="one3" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/design.png"/>
+	<div id="one3" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp3" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/marketing.png"/>
+	<div id="temp3" id="contentService">Marketing</div>
 	</div>
-	<div>
-	<img id="one4" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;" src="icons_color/work.png"/>
+	<div id="one4" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp4" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/work.png"/>
+	<div id="temp4" id="contentService">Support</div>
 	</div>
 	</div>
 	</div>
