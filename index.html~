@@ -109,8 +109,6 @@ inContent.innerHTML=content[number];
 	</div>
 
 	<!--About us-->
-
-	 <center><h1 class="h1" style="color:#000;font-weight:bolder;font-size:50px;">ABOUT<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;"> US</span></h1></center>
 <div id="aboutus" style="height:100%;">
 <div id="leftbox">
 <p style="white-space:pre;font-size:80px;">
@@ -121,7 +119,7 @@ DO
 </div>
 
 <div id="rightbox">
-<div id="Topcontent" style="color:white;height:20%;font-size:20px;">
+<div id="Topcontent" style="color:white;height:30%;font-size:20px;padding-bottom:2%;">
 Our modest list of services to
 suit all your digital needs
 </div>
@@ -134,7 +132,7 @@ suit all your digital needs
 </div>
 <div id="mainBox">
 <h2>Clean & Modern:</h2>
-Modern, Industrial, Clean design….and the list goes on. 
+A fabulous collection of unique design ideas with custom-made interfaces.
 </div>
 </div>
 <div id="contentBox">
@@ -143,7 +141,7 @@ Modern, Industrial, Clean design….and the list goes on.
 </div>
 <div id="mainBox">
 <h2>Unique Design: </h2>
-A fabulous collection of unique design ideas with custom-made interfaces is a true work of design and style.
+Modern, Industrial, Clean design….and the list goes on. 
 </div>
 </div>
 </div>
