@@ -15,8 +15,8 @@
 </head>
 <style>
 @keyframes zoom{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
-@keyframes zoomBox{from{transform:scale(0);} to{transform:scale(1);}}
-@keyframes serviceAnim{from{transform:scale(0);} to{transform:scale(1);}}
+@keyframes zoomBox{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes serviceAnim{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
 </style>
 <script>
 function myfunction(){
@@ -94,9 +94,9 @@ inContent.innerHTML=content[number];}
 	<!--header-->
 	<div id="navbar">
  	<ul id="ul">
-		<!--<div id="logo">
-		<img src="images/icon1.jpeg">
-		</div>-->
+		<div id="logo">
+			CalciteX
+		</div>
 		<div id="links">
                 <a href="#header">Home</a>
                 <a href="#aboutus">AboutUs</a>
@@ -423,8 +423,13 @@ Trouble-free support is what we offer.
 
     <!---skills start-->
 	<div id="skills">
-    <h1 class="heading" style="color:BLACK; text-align: center; ">ABOUT SK<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">I</span>LLS</h1>
-    <div id="skills" class="skills">
+  <!--  <h1 class="heading" style="color:BLACK; text-align: center; ">ABOUT SK<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">I</span>LLS</h1>-->
+	<div id="skillsLeft">
+	About 
+	Skills
+	</div>
+	
+    <div class="skills">
                 <div class="skill-bars">
                     <div class="bar">
                         <div class="info">
@@ -464,15 +469,13 @@ Trouble-free support is what we offer.
             <div class="contentBx">
                 <div class="label">UNIQUE DESIGN</div>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore aspernatur iusto perferendis soluta! Non dolore enim aspernatur nesciunt. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur cupiditate tempora
-                        facilis molestiae facere atque nesciunt accusamus iste natus. Magni.</p>
+                    <p>A fabulous collection of unique design ideas with custom-made interfaces is a true work of design and style. With an abundance of unique design styles, we offer you customization and Modern style.</p>
                 </div>
             </div>
             <div class="contentBx">
                 <div class="label">GREAT SERVICE</div>
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore aspernatur iusto perferendis soluta! Non dolore enim aspernatur nesciunt. Mollitia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates facilis
-                        similique recusandae consequuntur eaque? Ut harum ab vitae deserunt molestiae eaque mollitia, officiis itaque voluptas, soluta voluptate quae culpa?</p>
+                    <p> Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly. </p>
                 </div>
             </div>
             <div class="contentBx">

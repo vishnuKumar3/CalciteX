@@ -13,6 +13,11 @@
     scroll-behavior:smooth;
 }
 
+@font-face{
+font-family:logoFont;
+src:url('fonts/PoiretOne-Regular.ttf');
+}
+
 body,html{
 height:100%;
 }
@@ -36,8 +41,9 @@ background-attachment:fixed;
 #navbar ul{
 display:flex;
 flex-direction:row;
-justify-content:center;
+justify-content:space-between;
 position:fixed;
+ z-index:1;
 width:100%;
 background:transparent;
 padding-top:0px;
@@ -51,11 +57,13 @@ margin-left:-5%;
 padding-top:20px;
 }
 
-#navbar ul div:nth-child(1) img{
-padding-top:0px;
-width:50%;
-height:60px;
-transform:scale(1.1);
+#navbar ul div:nth-child(1){
+font-weight:bolder;
+padding-top:10px;
+margin-left:2%;
+font-family:logoFont;
+font-size:30px;
+color:white;
 }
 
 
@@ -384,10 +392,17 @@ height:100px;
 
 /* worx end */
 
+#skills{
+ display: flex;
+ flex-direction:row;
+ justify-content:space-between;
+ height:100%;
+ background:blue;
+ overflow-y:scroll;
+}
+
 .skills {
-    display: flex;
-    flex-direction:row;
-    background-color: lightgray;
+   width:70%;
     margin-top:40px;
     margin-bottom:0px;
    padding-left:5%;
@@ -396,17 +411,27 @@ height:100px;
     padding-bottom:70px;
 }
 
+#skillsLeft{
+white-space:pre;
+font-size:80px;
+width:30%;
+color:white;
+margin-left:-5%;
+}
+
 .skill-bars {
     padding: 25px 30px 25px;
-    width: 50%;
+    width: 95%;
+    margin-left:2%;
     background: #fff;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
 .accordion{
-width:60%;
-margin-left:5%;
+width:100%;
+margin-left:0%;
+margin-top:5%;
 }
 
 .skill-bars .bar {
@@ -573,13 +598,14 @@ margin-left:5%;
     position: relative;
     background: #fff;
     height: 0;
+    text-indent:50px;
     overflow: hidden;
     transition: 0.5s;
     overflow-y: auto;
 }
 
 .active .content {
-    height: 150px;
+    height:auto;
     padding: 10px;
 }
 
@@ -606,18 +632,14 @@ margin-left:0%;
 
 
 @media (min-width:1500px){
-.skills{
-padding-left:5%;
-padding-right:5%;
-}
+
 
 .skill-bars{
-width:40%;
+width:95%;
 }
 
 .accordion{
-width:50%;
-margin-left:5%;
+width:100%;
 }
 }
 
