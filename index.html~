@@ -100,7 +100,7 @@ inContent.innerHTML=content[number];}
 		<div id="links">
                 <a href="#header">Home</a>
                 <a href="#aboutus">AboutUs</a>
-                <a href="#ourServicesheading">Services</a>
+                <a href="#ourServices">Services</a>
                 <a href="#worx">Work</a>
                 <a href="#skills">Skills</a>
                 <a href="#works">Plan</a>
@@ -378,7 +378,7 @@ Trouble-free support is what we offer.
 	</div>-->
 
 <!--our services-->
- <h1 class="heading" id="ourServicesheading" style="background:black;color:rgb(214, 199, 206);padding-top:50px; text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>
+ <!--<h1 class="heading" id="ourServicesheading" style="background:black;color:rgb(214, 199, 206);padding-top:50px; text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>-->
 	<div id="ourServices" style="background:black;height:100%;padding-top:10px">
 	<div id="mainService">
 	<div id="content" style="width:30%;height:400px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
