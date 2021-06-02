@@ -11,88 +11,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
-</head>
 <style>
 @keyframes zoom{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
 @keyframes zoomBox{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes zoom1{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
+@keyframes zoomBox1{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
 @keyframes serviceAnim{from{transform:scale(0);opacity:0;} to{transform:scale(1);opacity:1;}}
 </style>
-<script>
-function myfunction(){
-var aboutBox=document.getElementsByClassName("doubleBox");
-var navbar=document.getElementById("ul");
-var progress=document.getElementsByClassName("progress-line");
-var about=document.getElementById("aboutus");
-if(about.offsetTop-document.documentElement.scrollTop<100){
-navbar.style.background="black";
-for(i=0;i<aboutBox.length;i++){
-aboutBox[i].style.animationName="zoomBox";
-aboutBox[i].style.animationDuration="2s";
-aboutBox[i].style.animationDelay=i/2+"s";
-aboutBox[i].style.animationFillMode="both";
-}
-}
-else{
-navbar.style.background="transparent";
-}
-if(progress[0].offsetTop-document.documentElement.scrollTop<300){
-for(i=0;i<progress.length;i++){
-progress[i].style.animation="animate 1s cubic-bezier(1, 0, 0.5, 1) forwards";
-}
-}
-}
 
-function ServiceFunction(){
-var heading=document.getElementById("heading");
-var content=document.getElementById("content");
-var inContent=document.getElementById("innercontent");
-var serviceContent=document.getElementById("mainServiceContent");
-heading.innerHTML="our service";
-heading.style.whiteSpace="normal";
-heading.style.fontSize="20px";
-heading.style.marginLeft="2%";
-heading.style.marginTop="30%";
-content.style.marginLeft="5%";
-serviceContent.style.animationName="serviceAnim";
-serviceContent.style.animationDuration="1s";
-serviceContent.innerText="Our Services";
-inContent.innerHTML="<p>1.App Development<p> <br/> <p>2.Web Development<p> <br/> <p>3.UI & UX Design<p> <br/> <p>4.Digital Marketing<p> <br/> <p>5.Support</p> <br/> <p>6.Chemical Engineering</p>";
-var main=document.getElementById("main");
-var ele=document.getElementsByClassName("services");
-for(i=0;i<ele.length;i++){
-ele[i].style.display="block";
-ele[i].style.animationName="servicesAnim";
-ele[i].style.animationDuration="1s";
-ele[i].style.animationDelay=(i/5)+"s";
-}
-}
+</head>
 
-var headings=["UI design","web development","App development","Digital Marketing","Support","Chemical Engineering"];
-var content=[
-"A Fabulous Collection Of Unique Design Ideas With Custom-Made Interfaces Is A True Work Of Design And Style. Design is one of the most important factors when building a brand. The design is what will set you apart from your competition and help you get the desired emotion or feeling from customers.With An Abundance Of Unique Design Styles, We Offer You Customization And Modern Style.",
-" A website establishes your Business, adds value and credibility. In the cyber world, there are millions of websites, no matter how good your services are; the main goal is to stand out.Here with Cutting edge designs and functionality, we design the exact website you need for your business.While It Comes To Web Development Its Our Best And Most Demanding Service With 100% Guaranteed Satisfaction",
-"With Growing demand in this Digital World we are committed to develop the perfect Mobile Application that your Business needs, with an Attractive price in mind. With an Attractive Price in mindWe have an answer to your requests, if your business is struggling or you want to reach more people, a Mobile 		Application is what you need.We are Experts in the fields of <ul><br/> <p>E-Commerce</p><br/><p>Restaurants, Nightlife and Clubs</p><br/><p>Jewellery store </p><br/><p>Small Business Owners … And many more</p></ul>",
-"Around 4 Billion People use Social Media in the current scenario, and the numbers are still growing exponentially. Your customers are online, which highlights the importance of digital marketing. They’re browsing the web looking for your products or services. If they can’t find your products because you don’t have an online presence, you risk losing those leads to your competitors.We at CalciteX Provide Businesses Of All Sizes With An Opportunity To Market Their Brand 24/7 At A Low Cost. From Startups To Medium-Sized Enterprises To Multiple-Location Companies",
-"Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.",
-"We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production."
-]
-var number="";
-function display(event){
-if(event.target.id.charAt(event.target.id.length-1)!=number){
-number=event.target.id.charAt(event.target.id.length-1);
-var ele=document.getElementById("heading");
-var inContent=document.getElementById("innercontent");
-if(ele.style.animationName!="opacityAnim"){ele.style.animationName="opacityAnim";inContent.style.animationName="opacityAnim";}
-else{ele.style.animationName="opacity1Anim";inContent.style.animationName="opacity1Anim";}
-ele.style.animationDuration="2s";
-inContent.style.animationDuration="2s";
-ele.innerHTML=headings[number];
-inContent.innerHTML=content[number];}
-
-}
-
-</script>
 <body onscroll="myfunction()">
 	<!--header-->
 	<div id="navbar">
@@ -512,7 +440,24 @@ Trouble-free support is what we offer.
 	</div>
     <!--skills end-->
     <!--Our work start-->
-    <section id="works">
+	<div id="workflow">
+	<div id="workleftBox">
+	<p id="leftmsg">
+	HOW<br/>
+	WE <br/>
+	WORK?
+	</p>
+	</div>
+	<div id="workrightBox">
+	<div id="videoBox">
+	<video style="width:100%;height:100%;" id="planeVideo" src="plane_video/plane1.mp4"/>
+	</div>
+	<div id="rightmsg">Click the button to see workflow</div>
+	<button onclick="videoFunction()" id="nextButton" >Next</button>
+	</div>
+	</div>
+
+   <!-- <section id="works">
         <div class="works">
             <h1 class="heading" style="color:BLACK; text-align: center; ">HOW<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;"> WE</span> WORK</h1>
             <div class="cen">
@@ -547,7 +492,7 @@ Trouble-free support is what we offer.
 
             </div>
         </div>
-    </section>
+    </section>-->
     <!--our work ends-->
     <!--clints-->
   <!--  <h1 class="heading" style="color:black; text-align: center; font-size: 3rem; font-weight: strong bolder; ">OUR CLIE<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">N</span>T</h1>
@@ -574,7 +519,7 @@ Trouble-free support is what we offer.
                 </div>
             </li>
         </ul>
-    </div>
+    </div>-->
     <!--cliensts end-->
     <!--pricing table -->
 <!--
@@ -717,4 +662,126 @@ Trouble-free support is what we offer.
     <!--contactus end-->
 </body>
 
+
+<script>
+
+var ParamVideo=document.getElementById("planeVideo");
+var lefttext=document.getElementById("leftmsg");
+var rightText=document.getElementById("rightmsg");
+var buttonParam=document.getElementById("nextButton");
+var displayParam;
+var indexParam;
+var msgs=["PLAN","IDEA","SKETCH","DESIGN","IMPLEMENT"];
+
+function videoFunction(){
+indexParam=-1;
+rightText.style.display="none";
+buttonParam.style.display="none";
+displayParam=window.setInterval(displayMsg,1000);
+ParamVideo.playbackRate=0.8;
+ParamVideo.play();
+}
+
+ParamVideo.onended=function(){ParamVideo.play();ParamVideo.pause();};
+
+function displayMsg(){
+indexParam++;
+if(indexParam==5){
+clearInterval(displayParam);
+lefttext.style.marginTop="30%";
+rightText.style.display="block";
+buttonParam.style.display="block";
+lefttext.innerHTML="HOW<br/>WE<br/>WORK?";
+}
+else{
+if(lefttext.style.animationName=="zoomBox1") lefttext.style.animationName="zoom1";
+else lefttext.style.animationName="zoomBox1";
+lefttext.style.animationDuration="1s";
+lefttext.style.marginTop="60%";
+lefttext.innerText=msgs[indexParam];
+}
+}
+
+
+
+
+function myfunction(){
+var aboutBox=document.getElementsByClassName("doubleBox");
+var navbar=document.getElementById("ul");
+var progress=document.getElementsByClassName("progress-line");
+var about=document.getElementById("aboutus");
+if(about.offsetTop-document.documentElement.scrollTop<100){
+navbar.style.background="black";
+for(i=0;i<aboutBox.length;i++){
+aboutBox[i].style.animationName="zoomBox";
+aboutBox[i].style.animationDuration="2s";
+aboutBox[i].style.animationDelay=i/2+"s";
+aboutBox[i].style.animationFillMode="both";
+}
+}
+else{
+navbar.style.background="transparent";
+}
+if(progress[0].offsetTop-document.documentElement.scrollTop<300){
+for(i=0;i<progress.length;i++){
+progress[i].style.animation="animate 1s cubic-bezier(1, 0, 0.5, 1) forwards";
+}
+}
+}
+
+function ServiceFunction(){
+var heading=document.getElementById("heading");
+var content=document.getElementById("content");
+var inContent=document.getElementById("innercontent");
+var serviceContent=document.getElementById("mainServiceContent");
+heading.innerHTML="our service";
+heading.style.whiteSpace="normal";
+heading.style.fontSize="20px";
+heading.style.marginLeft="2%";
+heading.style.marginTop="30%";
+content.style.marginLeft="5%";
+serviceContent.style.animationName="serviceAnim";
+serviceContent.style.animationDuration="1s";
+serviceContent.innerText="Our Services";
+inContent.innerHTML="<p>1.App Development<p> <br/> <p>2.Web Development<p> <br/> <p>3.UI & UX Design<p> <br/> <p>4.Digital Marketing<p> <br/> <p>5.Support</p> <br/> <p>6.Chemical Engineering</p>";
+var main=document.getElementById("main");
+var ele=document.getElementsByClassName("services");
+for(i=0;i<ele.length;i++){
+ele[i].style.display="block";
+ele[i].style.animationName="servicesAnim";
+ele[i].style.animationDuration="1s";
+ele[i].style.animationDelay=(i/5)+"s";
+}
+}
+
+var headings=["UI design","web development","App development","Digital Marketing","Support","Chemical Engineering"];
+var content=[
+"A Fabulous Collection Of Unique Design Ideas With Custom-Made Interfaces Is A True Work Of Design And Style. Design is one of the most important factors when building a brand. The design is what will set you apart from your competition and help you get the desired emotion or feeling from customers.With An Abundance Of Unique Design Styles, We Offer You Customization And Modern Style.",
+" A website establishes your Business, adds value and credibility. In the cyber world, there are millions of websites, no matter how good your services are; the main goal is to stand out.Here with Cutting edge designs and functionality, we design the exact website you need for your business.While It Comes To Web Development Its Our Best And Most Demanding Service With 100% Guaranteed Satisfaction",
+"With Growing demand in this Digital World we are committed to develop the perfect Mobile Application that your Business needs, with an Attractive price in mind. With an Attractive Price in mindWe have an answer to your requests, if your business is struggling or you want to reach more people, a Mobile 		Application is what you need.We are Experts in the fields of <ul><br/> <p>E-Commerce</p><br/><p>Restaurants, Nightlife and Clubs</p><br/><p>Jewellery store </p><br/><p>Small Business Owners … And many more</p></ul>",
+"Around 4 Billion People use Social Media in the current scenario, and the numbers are still growing exponentially. Your customers are online, which highlights the importance of digital marketing. They’re browsing the web looking for your products or services. If they can’t find your products because you don’t have an online presence, you risk losing those leads to your competitors.We at CalciteX Provide Businesses Of All Sizes With An Opportunity To Market Their Brand 24/7 At A Low Cost. From Startups To Medium-Sized Enterprises To Multiple-Location Companies",
+"Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.",
+"We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production."
+]
+var number="";
+function display(event){
+if(event.target.id.charAt(event.target.id.length-1)!=number){
+number=event.target.id.charAt(event.target.id.length-1);
+var ele=document.getElementById("heading");
+var inContent=document.getElementById("innercontent");
+if(ele.style.animationName!="opacityAnim"){ele.style.animationName="opacityAnim";inContent.style.animationName="opacityAnim";}
+else{ele.style.animationName="opacity1Anim";inContent.style.animationName="opacity1Anim";}
+ele.style.animationDuration="2s";
+inContent.style.animationDuration="2s";
+ele.innerHTML=headings[number];
+inContent.innerHTML=content[number];}
+
+}
+
+
+</script>
+
 </html>
+
+
+
