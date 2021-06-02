@@ -46,6 +46,7 @@ progress[i].style.animation="animate 1s cubic-bezier(1, 0, 0.5, 1) forwards";
 function ServiceFunction(){
 var heading=document.getElementById("heading");
 var content=document.getElementById("content");
+var inContent=document.getElementById("innercontent");
 var serviceContent=document.getElementById("mainServiceContent");
 heading.innerHTML="our service";
 heading.style.whiteSpace="normal";
@@ -56,6 +57,7 @@ content.style.marginLeft="5%";
 serviceContent.style.animationName="serviceAnim";
 serviceContent.style.animationDuration="1s";
 serviceContent.innerText="Our Services";
+inContent.innerHTML="<p>1.App Development<p> <br/> <p>2.Web Development<p> <br/> <p>3.UI & UX Design<p> <br/> <p>4.Digital Marketing<p> <br/> <p>5.Support</p> <br/> <p>6.Chemical Engineering</p>";
 var main=document.getElementById("main");
 var ele=document.getElementsByClassName("services");
 for(i=0;i<ele.length;i++){
@@ -66,13 +68,14 @@ ele[i].style.animationDelay=(i/5)+"s";
 }
 }
 
-var headings=["UI design","web development","App development","Digital Marketing","Support"];
+var headings=["UI design","web development","App development","Digital Marketing","Support","Chemical Engineering"];
 var content=[
-"A fabulous collection of unique design ideas with custom-made interfaces is a true work of design and style. With an abundance of unique design styles, we offer you customization and Modern style.",
-"CalciteX cybernetics provides you worlds trending and best technology. While it comes to Web Development its our best and most demanding service with 100% gurranted satisfaction",
-"With growing demand in this digital world we at CalciteX Cybernetics  committed to provide a mobile app which meets your business needs with an attractive price tag in mind.",
-"We at CalciteX cybernetics provide businesses of all sizes with an opportunity to market their brand 24/7 at a low cost. From startups to medium-sized enterprises to multiple-location companies",
-"Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly."
+"A Fabulous Collection Of Unique Design Ideas With Custom-Made Interfaces Is A True Work Of Design And Style. Design is one of the most important factors when building a brand. The design is what will set you apart from your competition and help you get the desired emotion or feeling from customers.With An Abundance Of Unique Design Styles, We Offer You Customization And Modern Style.",
+" A website establishes your Business, adds value and credibility. In the cyber world, there are millions of websites, no matter how good your services are; the main goal is to stand out.Here with Cutting edge designs and functionality, we design the exact website you need for your business.While It Comes To Web Development Its Our Best And Most Demanding Service With 100% Guaranteed Satisfaction",
+"With Growing demand in this Digital World we are committed to develop the perfect Mobile Application that your Business needs, with an Attractive price in mind. With an Attractive Price in mindWe have an answer to your requests, if your business is struggling or you want to reach more people, a Mobile 		Application is what you need.We are Experts in the fields of <ul><br/> <p>E-Commerce</p><br/><p>Restaurants, Nightlife and Clubs</p><br/><p>Jewellery store </p><br/><p>Small Business Owners … And many more</p></ul>",
+"Around 4 Billion People use Social Media in the current scenario, and the numbers are still growing exponentially. Your customers are online, which highlights the importance of digital marketing. They’re browsing the web looking for your products or services. If they can’t find your products because you don’t have an online presence, you risk losing those leads to your competitors.We at CalciteX Provide Businesses Of All Sizes With An Opportunity To Market Their Brand 24/7 At A Low Cost. From Startups To Medium-Sized Enterprises To Multiple-Location Companies",
+"Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.",
+"We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production."
 ]
 var number="";
 function display(event){
@@ -159,6 +162,7 @@ suit all your digital needs
 </div>
 <div class="mainBox">
 <h2 >Clean & Modern:</h2>
+<br/>
 A fabulous collection of unique design ideas with custom-made interfaces.
 </div>
 </div>
@@ -168,6 +172,7 @@ A fabulous collection of unique design ideas with custom-made interfaces.
 </div>
 <div class="mainBox">
 <h2>Unique Design: </h2>
+<br/>
 Modern, Industrial, Clean design….and the list goes on. 
 </div>
 </div>
@@ -180,6 +185,7 @@ Modern, Industrial, Clean design….and the list goes on.
 </div>
 <div class="mainBox">
 <h2>Pixel Project:</h2>
+<br/>
 If owning a piece of history is what you desire, Pixels Projects are the ones you need. 
 </div>
 </div>
@@ -189,6 +195,7 @@ If owning a piece of history is what you desire, Pixels Projects are the ones yo
 </div>
 <div class="mainBox">
 <h2>Cool Staff:</h2>
+<br/>
 Let’s be honest, everyone looks for a “cool” staff to work with.
 </div>
 </div>
@@ -202,6 +209,7 @@ Let’s be honest, everyone looks for a “cool” staff to work with.
 </div>
 <div class="mainBox">
 <h2>Responsive: </h2>
+<br/>
 Responsiveness is the essential mix of flexible grids and layouts, images, and an intelligent use of media queries.
 </div>
 </div>
@@ -211,6 +219,7 @@ Responsiveness is the essential mix of flexible grids and layouts, images, and a
 </div>
 <div class="mainBox">
 <h2>Great Support:</h2>
+<br/>
 Trouble-free support is what we offer.
 </div>
 </div>
@@ -378,14 +387,15 @@ Trouble-free support is what we offer.
 
 <!--our services-->
  <!--<h1 class="heading" id="ourServicesheading" style="background:black;color:rgb(214, 199, 206);padding-top:50px; text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>-->
-	<div id="ourServices" style="background:black;height:100%;padding-top:10px">
+	<div id="ourServices" style="background:black;height:100%;padding-top:0px;">
 	<div id="mainService">
-	<div id="content" style="width:30%;height:400px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
+	<div id="content" style="width:35%;height:400px;padding-bottom:50px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
 	<div id="heading" >
 	Our 
 	Services
 	</div>
 	<div id="innercontent">
+
 	</div>
 	</div>
 
@@ -415,6 +425,10 @@ Trouble-free support is what we offer.
 	<div id="one4" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
 	<img id="temp4" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/work.png"/>
 	<div id="temp4" id="contentService">Support</div>
+	</div>
+	<div id="one5" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<img id="temp5" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/chemical.png"/>
+	<div id="temp5" id="contentService">Chemical Enginnering</div>
 	</div>
 	</div>
 	</div>
@@ -518,7 +532,7 @@ Trouble-free support is what we offer.
                 </div>
                 <div class="work">
                     <i class="fas fa-magic"></i>
-                    <h2>DISIGN</h2>
+                    <h2>DESIGN</h2>
                 </div>
 
                 <div class="work">
@@ -671,9 +685,9 @@ Trouble-free support is what we offer.
                     <br>
                     <div>Email:support@calcitex.com</div>
 		    <br>
-                    <div>Phone: 8179033458</div>
+                    <div>Phone/WhatsApp:+91 8179033458</div>
                     <br>		
-                    <div>Address: Koushik Enclave,Bharathi Nagar Colony,Temple Alwal,Secunderabad,India</div>
+                    <div>Address:Koushik Enclave, Bharathi Nagar Colony, Temple Alwal, Secunderabad, India - 500010</div>
 		 
                 </div>
                 <div class="contact-form">
