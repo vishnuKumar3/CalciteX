@@ -511,11 +511,11 @@ flex-direction:row;
 }
 
 .bar .progress-line.jquery span {
-    width: 92%;
+    width: 88%;
 }
 
 .bar .progress-line.python span {
-    width: 92%;
+    width: 90%;
 }
 
 .bar .progress-line.mysql span {
@@ -618,11 +618,12 @@ width:100%;
 #workflow #workleftBox{width:35%;}
 #workflow #workrightBox{width:65%;}
 #workflow #videoBox{width:100%;height:70%;}
-#workflow #nextButton{margin-left:60%;width:100px;height:30px;color:black;background:white;margin-top:3%;border-radius:5px;}
+#workflow #nextButton{margin-left:5%;width:200px;height:200px;color:black;background:white;margin-top:20%;border-radius:5px;}
 #workflow #leftmsg{text-align:center;color:white;margin-top:1%;border-radius:5px;font-size:80px;margin-top:30%;}
 #workflow #rightmsg{text-align:center;color:white;margin-top:1%;border-radius:5px;font-size:20px;}
 @media only screen and (min-width:1500px){
 #workflow #videoBox{width:100%;height:70%;}
+#workflow #nextButton{margin-left:30%;margin-top:20%;width:40%;height:40%;}
 }
 
 

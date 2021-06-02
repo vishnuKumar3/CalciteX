@@ -470,13 +470,13 @@ Trouble-free support is what we offer.
 	</div>
 	<div id="workrightBox">
 	<div id="videoBox">
-	<video style="width:100%;height:100%;" src="plane_video/plane1.mp4" id="planeVideo">
+	<button onclick="videoFunction()" id="nextButton" ><img style="width:100%;height:100%;" src="icons/plane.png"></button>
+	<video style="width:100%;height:100%;display:none;" src="plane_video/plane1.mp4" id="planeVideo">
 	</div>
-	<div id="rightmsg">Click the button to see workflow</div>
-	<button onclick="videoFunction()" id="nextButton" >Next</button>
-	<svg style="margin-left:10%;" width="500" height="100">
+	<div id="rightmsg">Click the plane to see how we work</div>
+	<!--<svg style="margin-left:10%;" width="500" height="100">
 	<path d="M0 0 Q200 40 150 80 C40 80 100 40 400 10 L400 10 390 30 L400 10 380 0" fill="none"  stroke-dasharray="5,5" stroke="black" stroke-width="2">
-	</svg>
+	</svg>-->
 	</div>
 	</div>
 
@@ -697,6 +697,7 @@ var indexParam=0;
 var msgs=["PLAN","IDEA","SKETCH","DESIGN","IMPLEMENT"];
 
 function videoFunction(){
+videoParam.style.display="block";
 indexParam=-1;
 rightText.style.display="none";
 ButtonParam.style.display="none";
@@ -705,13 +706,15 @@ videoParam.playbackRate=0.8;
 videoParam.play();
 }
 
-videoParam.onended=function(){videoParam.play();videoParam.pause();};
+//videoParam.onended=function(){videoParam.play();videoParam.pause();};
 
 function displayMsg(){
 indexParam++;
 if(indexParam==5){
 clearInterval(displayParam);
+videoParam.style.display="none";
 rightText.style.display="block";
+rightText.style.marginTop="-20%";
 ButtonParam.style.display="block";
 lefttext.innerHTML="HOW<br/>WE<br/>WORK?";
 }
