@@ -18,6 +18,10 @@ font-family:logoFont;
 src:url('fonts/PoiretOne-Regular.ttf');
 }
 
+@font-face{font-family:serviceFont;
+src:url('fonts/poppinsItalic.ttf');
+}
+
 *{font-family:sans-serif;}
 
 body,html{
@@ -62,7 +66,7 @@ padding-top:20px;
 #navbar ul div:nth-child(1){
 font-weight:bolder;
 padding-top:10px;
-margin-left:2%;
+margin-left:5%;
 font-family:logoFont;
 font-size:30px;
 color:white;
@@ -71,9 +75,9 @@ color:white;
 
 
 #navbar ul #links a{
-height:30px;
+
 color:white;
-margin-right:8%;
+margin-right:15%;
 }
 
 #header .mainBox .button{
@@ -94,6 +98,7 @@ align-items:center;
 }
 
 #navbar ul #links a:hover{
+padding:3px 0px 3px 0px;
 color:rgb(255,2,108); 
 border-bottom:2px solid rgb(255,2,108);
 border-top:2px solid rgb(255,2,108);
@@ -159,7 +164,7 @@ display:none;
 /*about us*/
 
 #aboutus{font-family:sans-serif;padding:0px 0px 0px 0px;display:flex;flex-direction:row;justify-content:space-around;}
-#aboutus #leftbox{width:30%;background:rgb(247,143,176);color:white;font-weight:lighter;height:100%;align-items:flex-dtart;margin-top:0%;padding:0% 0% 0% 5%;}
+#aboutus #leftbox{width:30%;background:rgb(247,143,176);color:white;font-weight:lighter;height:100%;display:flex;align-items:center;margin-top:0%;padding:0% 0% 0% 5%;}
 #aboutus #rightbox{width:70%;padding:5% 0px 5% 50px;background:rgb(225,1,88);display:flex;flex-direction:column;justify-content:flex-end;}
 #aboutus #rightbox .doubleBox{transform:scale(0);width:100%;height:30%;margin-bottom:3%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;align-items:flex-end;}
 #aboutus #rightbox .doubleBox #contentBox{color:white;align-items:center;width:50%;height:100%;display:flex;flex-direction:row;}
@@ -233,7 +238,7 @@ margin-right:2%;
 #contentService{color:white;border:1px solid transparent;text-align:left;padding-left:15px;width:100px;border-radius:10px;}
 #ourServices .services{border:1px solid transparent;padding:10px;width:0px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
 @keyframes rotateWheel{from{transform:rotate(0deg);} from{transform:rotate(-360deg);}}
-#ourServices #one0{transform:rotate(60deg) translateY(200px) rotate(-60deg);}
+#ourServices #one0{transform:rotate(60deg) translateY(150px) rotate(-60deg);}
 #ourServices #one1{transform:rotate(120deg) translateY(300px) rotate(-120deg);}
 #ourServices #one2{transform:rotate(150deg) translateY(550px) rotate(-150deg);}
 #ourServices #one3{transform:rotate(180deg) translateY(700px) rotate(-180deg);}
@@ -244,7 +249,7 @@ margin-right:2%;
 @keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
 @keyframes opacity1Anim{from{opacity:0;} to{opacity:1;}}
 #ourServices #heading{font-size:80px;white-space:pre;font-family:sans-serif;text-transform:uppercase;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -20%;border-radius:10px;color:white;padding-top:2px;}
-#ourServices #innercontent{font-variant:small-caps;font-size:20px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
+#ourServices #innercontent{font-family:serviceFont;font-size:18px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
 
 @media only screen and (max-width:1000px){
 #ourServices #mainService{
@@ -414,6 +419,8 @@ height:100px;
 }
 
 #skillsLeft{
+display:flex;
+align-items:center;
 background:rgb(80,93,193);
 white-space:pre;
 font-size:80px;
@@ -426,6 +433,10 @@ margin-left:-5%;
     color:white;
     padding: 25px 30px 25px;
     width: 95%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
     margin-left:2%;
     border-radius: 10px;
 }
@@ -438,6 +449,8 @@ margin-top:5%;
 
 .skill-bars .bar {
     margin: 20px 0;
+display:flex;
+flex-direction:row;
 }
 
 .skill-bars .bar:first-child {
@@ -490,7 +503,7 @@ margin-top:5%;
 }
 
 .bar .progress-line.html span {
-    width: 88%;
+    width: 93%;
 }
 
 .bar .progress-line.css span {
@@ -498,70 +511,23 @@ margin-top:5%;
 }
 
 .bar .progress-line.jquery span {
-    width: 92%;
+    width: 88%;
 }
 
 .bar .progress-line.python span {
-    width: 92%;
+    width: 90%;
 }
 
 .bar .progress-line.mysql span {
     width: 85%;
 }
 
-.progress-line span::before {
-    position: absolute;
-    content: "";
-    top: -10px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: #fff;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
 
-.progress-line span::after {
-    position: absolute;
-    top: -28px;
-    right: 0;
-    font-weight: 500;
-    background: #fff;
-    color: #000;
-    padding: 1px 8px;
-    font-size: 12px;
-    border-radius: 3px;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-}
 
 @keyframes showText2 {
     100% {
         opacity: 1;
     }
-}
-
-.progress-line.html span::after {
-    content: "88%";
-}
-
-.progress-line.css span::after {
-    content: "80%";
-}
-
-.progress-line.jquery span::after {
-    content: "92%";
-}
-
-.progress-line.python span::after {
-    content: "92%";
-}
-
-.progress-line.mysql span::after {
-    content: "85%";
 }
 
 .dis {
