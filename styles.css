@@ -614,11 +614,11 @@ width:100%;
 
 /* work start*/
 
-#workflow{display:flex;flex-direction:row;height:100%;background:rgb(41,96,137)}
+#workflow{display:flex;flex-direction:row;height:100%;background:rgb(41,96,137);}
 #workflow #workleftBox{width:35%;}
 #workflow #workrightBox{width:65%;}
 #workflow #videoBox{width:100%;height:70%;}
-#workflow #nextButton{margin-left:35%;width:200px;height:200px;color:black;background:white;margin-top:20%;border-radius:5px;}
+#workflow #nextButton{margin-left:35%;cursor:pointer;width:200px;height:200px;color:black;background:white;margin-top:20%;border-radius:5px;}
 #workflow #leftmsg{text-align:center;color:white;margin-top:1%;border-radius:5px;font-size:80px;margin-top:30%;}
 #workflow #rightmsg{text-align:center;color:white;margin-top:1%;border-radius:5px;font-size:20px;}
 @media only screen and (min-width:1500px){

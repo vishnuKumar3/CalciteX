@@ -714,6 +714,7 @@ if(indexParam==5){
 clearInterval(displayParam);
 videoParam.style.display="none";
 rightText.style.display="block";
+rightText.style.marginTop="-20%";
 ButtonParam.style.display="block";
 lefttext.innerHTML="HOW<br/>WE<br/>WORK?";
 }
