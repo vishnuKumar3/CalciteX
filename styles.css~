@@ -33,9 +33,18 @@ height:100%;
 #header{
 height:100vh;
 margin-bottom:0px;
-background-image:url('images/background3.png');
-background-size:100% 130%;
+background-image:url('images/background1.png');
+background-size:100% 100%;
 background-attachment:fixed;
+}
+
+#headerImg{
+position:fixed;
+display:block;
+margin-left:32%;
+margin-top:31%;
+width:40px;
+height:40px;
 }
 
 .navbar{flex-direction:column;justify-content:space-between;align-items:center;padding-top:20px;display:none;}
@@ -123,6 +132,12 @@ width:100%;
 margin-left:0%;
 padding-top:20px;
 }
+
+#headerImg{
+margin-top:36.5%;
+margin-left:33%;
+}
+
 }
 
 @media screen and (max-width:1000px){
