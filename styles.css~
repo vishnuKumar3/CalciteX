@@ -33,8 +33,8 @@ height:100%;
 #header{
 height:100vh;
 margin-bottom:0px;
-background-image:url('images/background1.jpg');
-background-size:100% 100%;
+background-image:url('images/background3.png');
+background-size:100% 130%;
 background-attachment:fixed;
 }
 
@@ -614,7 +614,7 @@ width:100%;
 
 /* work start*/
 
-#workflow{display:flex;flex-direction:row;height:100%;background:black;}
+#workflow{display:flex;flex-direction:row;height:100%;background:rgb(41,96,137);}
 #workflow #workleftBox{width:35%;}
 #workflow #workrightBox{width:65%;}
 #workflow #videoBox{width:100%;height:70%;}
