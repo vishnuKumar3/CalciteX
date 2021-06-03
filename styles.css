@@ -179,7 +179,7 @@ display:none;
 /*about us*/
 
 #aboutus{font-family:sans-serif;padding:0px 0px 0px 0px;display:flex;flex-direction:row;justify-content:space-around;}
-#aboutus #leftbox{width:30%;background:rgb(247,143,176);color:white;font-weight:lighter;height:100%;display:flex;align-items:center;margin-top:0%;padding:0% 0% 0% 5%;}
+#aboutus #leftbox{width:30%;background:rgb(247,143,176);color:white;font-weight:lighter;height:100%;display:flex;align-items:center;margin-top:0%;padding:0% 0% 10% 5%;}
 #aboutus #rightbox{width:70%;padding:5% 0px 5% 50px;background:rgb(225,1,88);display:flex;flex-direction:column;justify-content:flex-end;}
 #aboutus #rightbox .doubleBox{transform:scale(0);width:100%;height:30%;margin-bottom:3%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;align-items:flex-end;}
 #aboutus #rightbox .doubleBox #contentBox{color:white;align-items:center;width:50%;height:100%;display:flex;flex-direction:row;}
@@ -263,10 +263,12 @@ margin-right:2%;
 
 @keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
 @keyframes opacity1Anim{from{opacity:0;} to{opacity:1;}}
-#ourServices #heading{font-size:80px;white-space:pre;font-family:sans-serif;text-transform:uppercase;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -20%;border-radius:10px;color:white;padding-top:2px;}
-#ourServices #innercontent{font-family:serviceFont;font-size:18px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
-
+#ourServices #heading{font-size:80px;white-space:pre;font-family:sans-serif;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -20%;border-radius:10px;color:white;padding-top:2px;}
+#ourServices #innercontent {font-family:serviceFont;font-size:18px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
+#ourServices #innercontent p{font-family:serviceFont;text-indent:10%;}
+#ourServices #innercontent li{font-family:serviceFont;}
 @media only screen and (max-width:1000px){
+#ourServices #innercontent li{margin-bottom:5%;}
 #ourServices #mainService{
 display:flex;
 flex-direction:column;
