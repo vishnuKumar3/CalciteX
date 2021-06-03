@@ -414,6 +414,19 @@ Trouble-free support is what we offer.
                     </div>
                     <div class="bar">
 			<div style="width:20%;font-size:50px;">
+			82%
+			</div>
+			<div style="width:80%;">
+                        <div class="info">
+                            <span>MARKETING</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+			</div>
+                    </div>
+                    <div class="bar">
+			<div style="width:20%;font-size:50px;">
 			90%
 			</div>
 			<div style="width:80%;">
@@ -425,6 +438,7 @@ Trouble-free support is what we offer.
                         </div>
 			</div>
                     </div>
+
              	</div>
 
         <!--<div class="accordion">
@@ -748,6 +762,9 @@ icon.style.display="none";
 
 if(about.offsetTop-document.documentElement.scrollTop<550){
 icon.style.display="none";
+}
+
+if(about.offsetTop-document.documentElement.scrollTop<100){
 navbar.style.background="black";
 for(i=0;i<aboutBox.length;i++){
 aboutBox[i].style.animationName="zoomBox";

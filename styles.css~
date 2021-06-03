@@ -267,8 +267,8 @@ margin-right:2%;
 #ourServices #innercontent {font-family:serviceFont;font-size:18px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
 #ourServices #innercontent p{font-family:serviceFont;text-indent:10%;}
 #ourServices #innercontent li{font-family:serviceFont;}
+
 @media only screen and (max-width:1000px){
-#ourServices #innercontent li{margin-bottom:5%;}
 #ourServices #mainService{
 display:flex;
 flex-direction:column;
@@ -536,7 +536,7 @@ flex-direction:row;
 }
 
 .bar .progress-line.mysql span {
-    width: 85%;
+    width: 82%;
 }
 
 
