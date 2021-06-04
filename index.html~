@@ -507,22 +507,22 @@ Trouble-free support is what we offer.
 	SUPPORT
 	</p>
 	</div>
-	<img src="idea.png" style="width:40%;height:80%;">
+	<img src="icons/idea.png" style="width:40%;height:80%;">
 	</div>
 
 	<div class="ResponsiveDiv" >
 	<div style="width:30%;">
-	<img style="width:50%;height:50%;margin-left:25%;" src="responsive.png">
+	<img style="width:50%;height:50%;margin-left:25%;" src="icons/responsive.png">
 	<h3 style="text-align:center;">Responsive</h3>
 	<p style="text-align:center;width:70%;margin-left:20%;">A Positive team who are ready to answer your quires at the earliest</p>
 	</div>
 	<div style="width:30%;">
-	<img style="width:50%;height:50%;margin-left:25%;" src="chip.png">
+	<img style="width:50%;height:50%;margin-left:25%;" src="icons/chip.png">
 	<h3 style="text-align:center;">Community</h3>
 	<p style="text-align:center;width:70%;margin-left:20%;">An interactive community for everyone to Explore and Innovate new Ideas</p>
 	</div>
 	<div style="width:30%;">
-	<img style="width:50%;height:50%;margin-left:25%;" src="time.png">
+	<img style="width:50%;height:50%;margin-left:25%;" src="icons/time.png">
 	<h3 style="text-align:center;">ShowCase</h3>
 	<p style="text-align:center;width:70%;margin-left:20%;">A perfect platform for everyone who want to showcase their Creativity and Technical Knowledge</p>
 	</div>
@@ -530,8 +530,8 @@ Trouble-free support is what we offer.
 
 	<div class="ResponsiveDiv" >
 	<p style="width:80%;text-align:center;font-size:80px;">
-	DESIGN <img src="add.png" style="width:5%;height:5%;"> DEVELOPMENT<br/>
-	&nbsp&nbsp&nbspMARKETING   <img src="add.png" style="width:5%;height:5%;"> SOCIAL
+	DESIGN <img src="icons/add.png" style="width:5%;height:5%;"> DEVELOPMENT<br/>
+	&nbsp&nbsp&nbspMARKETING   <img src="icons/add.png" style="width:5%;height:5%;"> SOCIAL
 	</p>
 	</div>
 
@@ -543,7 +543,7 @@ Trouble-free support is what we offer.
 	SUPPORT
 	</p>
 	</div>
-	<img src="idea.png" style="width:40%;height:80%;">
+	<img src="icons/idea.png" style="width:40%;height:80%;">
 	</div>
 
 	</div>
