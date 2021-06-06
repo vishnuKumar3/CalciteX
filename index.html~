@@ -614,7 +614,7 @@ Trouble-free support is what we offer.
 
 	</div>
 	<div id="circles">
-	<button style="background:black;" onclick="responsiveFunction(0)" id="circle0"></button>
+	<button style="background:rgb(225,1,88);" onclick="responsiveFunction(0)" id="circle0"></button>
 	<button onclick="responsiveFunction(1)"  id="circle1"></button>
 	<button onclick="responsiveFunction(2)" id="circle2"></button>
 	</div>
