@@ -86,7 +86,7 @@ color:white;
 #navbar ul #links a{
 
 color:white;
-margin-right:15%;
+margin-right:10%;
 }
 
 #header .mainBox .button{
@@ -131,6 +131,10 @@ justify-content:center;
 width:100%;
 margin-left:0%;
 padding-top:20px;
+}
+
+#navbar ul #links a{
+margin-right:15%;
 }
 
 #headerImg{
@@ -638,6 +642,26 @@ width:100%;
 }
 }
 
+/*our team*/
+
+#ourTeam{color:white;background:rgb(225,1,88);height:100%;display:flex;width:100%;overflow-y:scroll;}
+#ourTeam #Teamleftbox{width:30%;height:100%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;}
+#ourTeam #Teamrightbox{width:70%;height:100%;padding:2% 5% 2% 5%;}
+@keyframes imgBackgroundAnim{from{background:black;} to{background:;}}
+@keyframes imgBackgroundAnim1{from{background:white;} to{background:black;}}
+#ourTeam #detailsBox{width:100%;height:100%;margin-top:5%;display:none;}
+#ourTeam #textBox1{height:30%;width:96%;display:flex;padding:2%;}
+#ourTeam #textBox2{height:70%;width:96%;display:flex;padding:2%;}
+#ourTeam #backImg{margin-left:1%;cursor:pointer;}
+#ourTeam #backImg:hover{margin-left:-1%;transition:1s;}
+#ourTeam #TeamMainBox{width:100%;height:100%;display:flex;justify-content:space-around;flex-wrap:wrap;}
+#ourTeam .detailsEmployeeIcon{font-size:30px;}
+
+@media only screen and (min-width:1500px){
+#ourTeam #textBox1{height:15%;}
+#ourTeam #textBox2{height:85%;}
+}
+
 
 /* work start*/
 
@@ -656,11 +680,11 @@ width:100%;
 
 /*responsive page start*/
 
-#Responsive{width:100%;height:100%;overflow:hidden;background:pink;}
+#Responsive{color:white;width:100%;height:100%;overflow:hidden;background:url('images/bgBlack.jpg');}
 #Responsive #ResponsiveBox{width:400%;height:90%;display:flex;flex-direction:row;animation-fill-mode:both;}
 #Responsive #ResponsiveBox .ResponsiveDiv{width:25%;height:100%;animation:imgAnim 1s;display:flex;align-items:center;justify-content:space-around;}
 #Responsive #circles{display:flex;justify-content:center;height:10%;}
-#Responsive #circles #circle0,#circles #circle1,#circles #circle2{margin-right:2%;width:30px;cursor:pointer;height:30px;border:1px solid black;border-radius:100%;transition:2s;}
+#Responsive #circles #circle0,#circles #circle1,#circles #circle2{margin-right:2%;width:20px;cursor:pointer;height:20px;border:1px solid black;border-radius:100%;transition:2s;}
 @keyframes imgAnim{from{opacity:0;} to{opacity:1;}}
 @keyframes scrollAnim{from{margin-left:0%} to{margin-left:-100%;}}
 @keyframes scrollAnim1{from{margin-left:-100%} to{margin-left:-200%;}}
@@ -912,7 +936,7 @@ justify-content:space-around;
 /* contact us*/
 
 #contact {
-    background: black;
+background:url('images/bgBlack.jpg');
     background-size: cover;
     justify-content: center;
     align-items: center;
