@@ -317,7 +317,7 @@ Trouble-free support is what we offer.
 
 <!--our services-->
  <!--<h1 class="heading" id="ourServicesheading" style="background:black;color:rgb(214, 199, 206);padding-top:50px; text-align: center; ">OU<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">R</span> SERVICES</h1>-->
-	<div id="ourServices" style="background:url('images/3.png');height:100%;padding-top:0px;">
+	<div id="ourServices" style="height:100%;width:100%;padding-top:0px;">
 	<div id="mainService">
 	<div id="content" style="width:35%;height:400px;padding-bottom:50px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
 	<div id="heading" >
@@ -626,11 +626,11 @@ Trouble-free support is what we offer.
     <!--Our work start-->
 	<div id="workflow">
 	<div id="workleftBox">
-	<p id="leftmsg">
+	<!--<p id="leftmsg">
 	HOW<br/>
 	WE<br/>
 	WORK?
-	</p>
+	</p>-->
 	</div>
 	<div id="workrightBox">
 	<div id="videoBox">
