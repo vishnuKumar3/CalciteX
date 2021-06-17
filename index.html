@@ -345,8 +345,8 @@ Trouble-free support is what we offer.
 	<div style="width:40%;height:150%;margin-left:20%;margin-top:300px;">
 
 	<div  onclick="ServiceFunction()" id="main" style="width:100px;height:100px;border-radius:10%;display:flex;flex-direction:column;" >
-	<img style="width:100%;height:100%;" src="icons_color/services.png">
-	<div id="mainServiceContent" style="color:white;font-family:blinker;">Click Here</div>
+	<img class="imgServices" style="width:100%;height:100%;margin:50% 50%;transform-origin:10% 10%;" src="icons_color/pin.png">
+	<div id="mainServiceContent" style="color:white;font-family:blinker;display:none;"></div>
 	</div>
 
 	<div id="one0" onmouseover="display(event)" class="services" style="width:100px;height:100px;border-radius:10%;">
@@ -1124,15 +1124,24 @@ var content=[
 " <p>A website establishes your Business, adds value and credibility. In the cyber world, there are millions of websites, no matter how good your services are; the main goal is to stand out.</p><br/><p>Here with Cutting edge designs and functionality, we design the exact website you need for your business.While It Comes To Web Development Its Our Best And Most Demanding Service With 100% Guaranteed Satisfaction</p>",
 "<p>With Growing demand in this Digital World we are committed to develop the perfect Mobile Application that your Business needs, with an Attractive price in mind.</p><br/><p> With an Attractive Price in mindWe have an answer to your requests, if your business is struggling or you want to reach more people, a Mobile 		Application is what you need.We are Experts in the fields of</p> <br/> <li>E-Commerce</li><li>Restaurants, Nightlife and Clubs</li><li>Jewellery store </li><li>Small Business Owners … And many more</li>",
 "<p>Around 4 Billion People use Social Media in the current scenario, and the numbers are still growing exponentially. Your customers are online, which highlights the importance of digital marketing. They’re browsing the web looking for your products or services.<p> <br/><p>If they can’t find your products because you don’t have an online presence, you risk losing those leads to your competitors.We at CalciteX Provide Businesses Of All Sizes With An Opportunity To Market Their Brand 24/7 At A Low Cost. From Startups To Medium-Sized Enterprises To Multiple-Location Companies",
-"Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.</p>",
-"We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production."
+"<p>Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.</p>",
+"<p>We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production.</p>"
 ]
 var number="";
 function display(event){
+var needle=document.getElementsByClassName("imgServices")[0];
 if(event.target.id.charAt(event.target.id.length-1)!=number){
-number=event.target.id.charAt(event.target.id.length-1);
-var ele=document.getElementById("heading");
-var inContent=document.getElementById("innercontent");
+	number=event.target.id.charAt(event.target.id.length-1);
+	needle.style.animationName="temp";
+	needle.style.animationDuration="1s";
+	var degree;
+	if(number==0){degree=30;}
+	else if(number==1){degree=70;}
+	else {degree=(number)*60;}
+	degree=degree+60+"deg";
+	needle.style.transform=`rotate(${degree})`;
+	var ele=document.getElementById("heading");
+	var inContent=document.getElementById("innercontent");
 if(ele.style.animationName!="opacityAnim"){ele.style.animationName="opacityAnim";inContent.style.animationName="opacityAnim";}
 else{ele.style.animationName="opacity1Anim";inContent.style.animationName="opacity1Anim";}
 ele.style.animationDuration="2s";

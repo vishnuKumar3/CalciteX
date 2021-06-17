@@ -279,10 +279,10 @@ margin-right:2%;
 @media only screen and (min-width:1500px){
 #ourServices #main{margin-top:10%;}
 }
-#ourServices #main img{animation:rotateWheel 4s linear infinite;}
+#ourServices #main .imgServices{animation:rotateWheel 4s linear infinite;transition:2s;}
 #contentService{color:white;border:1px solid transparent;text-align:left;padding-left:15px;width:100px;border-radius:10px;}
 #ourServices .services{border:1px solid transparent;padding:10px;width:0px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
-@keyframes rotateWheel{from{transform:rotate(0deg);} from{transform:rotate(-360deg);}}
+@keyframes rotateWheel{from{transform:rotate(0deg) translate(0px) rotate(0deg);} to{transform:rotate(360deg) translate(0px) rotate(360deg);}}
 #ourServices #one0{transform:rotate(60deg) translateY(180px) rotate(-60deg);}
 #ourServices #one1{transform:rotate(120deg) translateY(320px) rotate(-120deg);}
 #ourServices #one2{transform:rotate(150deg) translateY(550px) rotate(-150deg);}
@@ -534,7 +534,7 @@ flex-direction:row;
 .skill-bars .bar .progress-line {
     height: 10px;
     width: 100%;
-    background: #000;
+    background: #FEB0DF;
     position: relative;
     transform: scaleX(0);
     transform-origin: left;
