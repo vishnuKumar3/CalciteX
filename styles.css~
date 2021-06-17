@@ -283,23 +283,23 @@ margin-right:2%;
 #contentService{color:white;border:1px solid transparent;text-align:left;padding-left:15px;width:100px;border-radius:10px;}
 #ourServices .services{border:1px solid transparent;padding:10px;width:0px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
 @keyframes rotateWheel{from{transform:rotate(0deg);} from{transform:rotate(-360deg);}}
-#ourServices #one0{transform:rotate(60deg) translateY(150px) rotate(-60deg);}
-#ourServices #one1{transform:rotate(120deg) translateY(300px) rotate(-120deg);}
+#ourServices #one0{transform:rotate(60deg) translateY(180px) rotate(-60deg);}
+#ourServices #one1{transform:rotate(120deg) translateY(320px) rotate(-120deg);}
 #ourServices #one2{transform:rotate(150deg) translateY(550px) rotate(-150deg);}
-#ourServices #one3{transform:rotate(180deg) translateY(700px) rotate(-180deg);}
-#ourServices #one4{transform:rotate(200deg) translateY(650px) rotate(-200deg);}
+#ourServices #one3{transform:rotate(180deg) translateY(630px) rotate(-180deg);}
+#ourServices #one4{transform:rotate(200deg) translateY(600px) rotate(-200deg);}
 #ourServices #one5{transform:rotate(200deg) translateY(500px) rotate(-200deg);}
 @keyframes servicesAnim{from{opacity:0;} to{opacity:1;}}
 
 @keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
 @keyframes opacity1Anim{from{opacity:0;} to{opacity:1;}}
-#ourServices #heading{font-size:80px;white-space:pre;font-family:leftTextfont;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -30%;border-radius:10px;color:white;padding-top:2px;}
+#ourServices #heading{font-size:80px;white-space:pre;font-family:leftTextfont;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -30%;border-radius:10px;color:#baa9a9;padding-top:2px;}
 #ourServices #innercontent {font-family:serviceFont;font-size:22px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
 #ourServices #innercontent p{font-family:blinker;text-indent:10%;}
 #ourServices #innercontent li{font-family:blinker;}
 
 @media only screen and (min-width:1500px){
-#ourServices #heading{margin-top:40%;margin-left-15%;}
+#ourServices #heading{margin-top:40%;margin-left:-15%;}
 }
 
 @media only screen and (max-width:1000px){
@@ -717,6 +717,7 @@ width:100%;
 @keyframes scrollAnim2{from{margin-left:-200%} to{margin-left:-300%;}}
 
 @media only screen and (min-width:1500px){
+#Responsive #circles #circle0,#circles #circle1,#circles #circle2{width:10px;height:10px;}
 #Responsive{background-size:100% 100%;}
 }
 
