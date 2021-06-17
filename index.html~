@@ -71,18 +71,18 @@
 	<!--About us-->
 <div id="aboutus" style="height:100%;">
 <div id="leftbox">
-<p style="font-size:50px;font-family:leftTextfont;">
+<p style="white-space:pre;font-size:80px;font-family:leftTextfont;">
 WHAT
 WE 
 DO?
 </p>
 <br/>
-<hr style="border:1px solid #c6fdff;width:90%;"/>
+<!--<hr style="border:1px solid #c6fdff;width:90%;"/>
 <br/>
 <p style="font-size:25px;color:#c6fdff;font-family:leftTextfont">
 Our modest list of services to
 suit all your digital needs
-</p>
+</p>-->
 </div>
 
 <div id="rightbox">
@@ -96,6 +96,7 @@ suit all your digital needs
 <div id="contentBox">
 <div style="width:30%;">
 <i class="fa fa-heart" style="font-size:70px;color:white;"></i>
+<!--<img src="images/1.jpeg">-->
 </div>
 <div class="mainBox">
 <h2 >Clean & Modern:</h2>
@@ -106,6 +107,7 @@ A fabulous collection of unique design ideas with custom-made interfaces.
 <div id="contentBox">
 <div style="width:30%;">
 <i class="fa fa-area-chart" style="font-size:70px;color:white;"></i>
+<!--<img src="images/2.jpeg">-->
 </div>
 <div class="mainBox">
 <h2>Unique Design: </h2>
@@ -117,8 +119,9 @@ Modern, Industrial, Clean design….and the list goes on.
 
 <div class="doubleBox">
 <div id="contentBox">
-<div style="width:30%;">
+<div style="width:30%;height:100%;">
 <i class="fa fa-wrench" style="font-size:70px;color:white;"></i>
+<!--<img src="images/3.jpeg">-->
 </div>
 <div class="mainBox">
 <h2>Pixel Perfect:</h2>
@@ -129,6 +132,7 @@ Custom Tailored To Match Your Needs And Requirements
 <div id="contentBox">
 <div style="width:30%;">
 <i class="fa fa-users" style="font-size:70px;color:white;"></i>
+<!--<img src="images/4.jpeg">-->
 </div>
 <div class="mainBox">
 <h2>Cool Staff:</h2>
@@ -143,6 +147,7 @@ Let’s be honest, everyone looks for a “cool” staff to work with.
 <div id="contentBox">
 <div style="width:30%;">
 <i class="fa fa-laptop" style="font-size:70px;color:white;"></i>
+<!--<img src="images/5.jpeg">-->
 </div>
 <div class="mainBox">
 <h2>Responsive: </h2>
@@ -152,6 +157,7 @@ Responsiveness is the essential mix of flexible grids and layouts, images, and a
 </div>
 <div id="contentBox">
 <div style="width:30%;">
+<!--<img src="images/6.jpeg">-->
 <i class="fa fa-headphones" style="font-size:70px;color:white;"></i>
 </div>
 <div class="mainBox">
@@ -328,8 +334,8 @@ Trouble-free support is what we offer.
 	<div id="mainService">
 	<div id="content" style="width:35%;height:400px;padding-bottom:50px;border-radius:10px;margin-top:0px;margin-left:0%;border:1px solid transparent;">
 	<div id="heading" >
-	Our 
-	Services
+	OUR
+	SERVICES
 	</div>
 	<div id="innercontent">
 
@@ -340,7 +346,7 @@ Trouble-free support is what we offer.
 
 	<div  onclick="ServiceFunction()" id="main" style="width:100px;height:100px;border-radius:10%;display:flex;flex-direction:column;" >
 	<img style="width:100%;height:100%;" src="icons_color/services.png">
-	<div id="mainServiceContent" style="color:white;">Click Here</div>
+	<div id="mainServiceContent" style="color:white;font-family:blinker;">Click Here</div>
 	</div>
 
 	<div id="one0" onmouseover="display(event)" class="services" style="width:100px;height:100px;border-radius:10%;">
@@ -375,8 +381,8 @@ Trouble-free support is what we offer.
 	<div id="skills">
   <!--  <h1 class="heading" style="color:BLACK; text-align: center; ">ABOUT SK<span style="font-weight: bolder; color:rgb(255,2,108); font-size: 3rem;">I</span>LLS</h1>-->
 	<div id="skillsLeft">
-	Our
-	Skills
+	OUR
+	SKILLS
 	</div>
 	
     <div class="skills">
@@ -567,7 +573,7 @@ Trouble-free support is what we offer.
 
 	<div class="ResponsiveDiv">
 	<div style="width:49%;height:80%;display:flex;align-items:center;"> 
-	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;">
+	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;font-family:tomorrow;">
 	24/7<br/>
 	DEDICATED<br/>
 	SUPPORT
@@ -580,28 +586,28 @@ Trouble-free support is what we offer.
 	<div style="width:30%;">
 	<img style="width:50%;height:50%;margin-left:25%;" src="icons/responsive.png">
 	<br/>
-	<p style="text-align:center;font-weight:bolder;">Responsive</p>
+	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">Responsive</p>
 	<br/>
 	<p style="text-align:center;width:70%;margin-left:20%;">A Positive team who are ready to answer your quires at the earliest</p>
 	</div>
 	<div style="width:30%;">
 	<img style="width:50%;height:50%;margin-left:25%;" src="icons/chip.png">
 	<br/>
-	<p style="text-align:center;font-weight:bolder;">Community</p>
+	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">Community</p>
 	<br/>
 	<p style="text-align:center;width:70%;margin-left:20%;">An interactive community for everyone to Explore and Innovate new Ideas</p>
 	</div>
 	<div style="width:30%;">
 	<img style="width:50%;height:50%;margin-left:25%;" src="icons/time.png">
-	<br>
-	<p style="text-align:center;font-weight:bolder;">ShowCase</p>
+	<br/>
+	<p style="text-align:center;font-weight:bolder;font-family:tomorrow;">ShowCase</p>
 	<br/>
 	<p style="text-align:center;width:70%;margin-left:20%;">A perfect platform for everyone who want to showcase their Creativity and Technical Knowledge</p>
 	</div>
 	</div>
 
 	<div class="ResponsiveDiv" >
-	<p style="width:80%;text-align:center;font-size:80px;">
+	<p style="width:80%;text-align:center;font-size:80px;font-family:tomorrow;color:#C6FDFF;">
 	DESIGN <img src="icons/add.png" style="width:5%;height:5%;"> DEVELOPMENT<br/>
 	&nbsp&nbsp&nbspMARKETING   <img src="icons/add.png" style="width:5%;height:5%;"> SOCIAL
 	</p>
@@ -779,6 +785,7 @@ Trouble-free support is what we offer.
                             <li style="background-color: gray; color: white;">100 Database</li>
                             <li>5 Domain</li>
                             <li style="background-color: gray; color: white;">Support</li>
+
                         </ul>
                     </div>
                     <div class="price-bottom">
@@ -817,7 +824,7 @@ Trouble-free support is what we offer.
         <div class="contact">
             <div class="contact-section">
                 <div class="contact-info">
-                    <div style="font-size: 40px;margin-bottom:30px;">Contact Us</div>
+                    <div style="font-size: 40px;margin-bottom:30px;font-family:tomorrow;">Contact Us</div>
                     <br>
                     <p>Feel free to contact us anytime you want if you have any doubt about our services/packages</p>
 
@@ -832,10 +839,10 @@ Trouble-free support is what we offer.
                 <div class="contact-form">
                     <form class="contact" action="" method="post">
                         <div class="nm">
-                            <span style="color:rgb(255,2,108);">Your Name <input type="text" name="name" class="text-box"  required></span>
-                            <span style="color:rgb(255,2,108);">Your Email<input type="email" name="email" class="text-box"  required></span>
+                            <span style="color:#EEB0DF;">Your Name <input type="text" name="name" class="text-box"  required></span>
+                            <span style="color:#EEB0DF;">Your Email<input type="email" name="email" class="text-box"  required></span>
                         </div>
-                        <span style="color:rgb(255,2,108);">Message</span><textarea name="msg" rows="5" required></textarea>
+                        <span style="color:#EEB0DF;">Message</span><textarea name="msg" rows="5" required></textarea>
                         <input type="submit" name="submit" class="send-btn" value="Submit">
                     </form>
                 </div>
@@ -1092,7 +1099,8 @@ var serviceContent=document.getElementById("mainServiceContent");
 heading.style.fontFamily="serviceFont";
 heading.innerHTML="our service";
 heading.style.whiteSpace="normal";
-heading.style.fontSize="20px";
+heading.style.fontSize="25px";
+heading.style.fontFamily="tomorrow";
 heading.style.marginLeft="2%";
 heading.style.marginTop="30%";
 content.style.marginLeft="5%";
