@@ -293,7 +293,7 @@ margin-right:2%;
 
 @keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
 @keyframes opacity1Anim{from{opacity:0;} to{opacity:1;}}
-#ourServices #heading{font-size:80px;white-space:pre;font-family:leftTextfont;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -30%;border-radius:10px;color:#baa9a9;padding-top:2px;}
+#ourServices #heading{font-size:80px;white-space:pre;font-family:leftTextfont;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -30%;border-radius:10px;color:#ffa1a1;padding-top:2px;}
 #ourServices #innercontent {font-family:serviceFont;font-size:22px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
 #ourServices #innercontent p{font-family:blinker;text-indent:10%;}
 #ourServices #innercontent li{font-family:blinker;}
