@@ -71,10 +71,17 @@
 	<!--About us-->
 <div id="aboutus" style="height:100%;">
 <div id="leftbox">
-<p style="white-space:pre;font-size:80px;font-family:leftTextfont;">
+<p style="font-size:50px;font-family:leftTextfont;">
 WHAT
 WE 
 DO?
+</p>
+<br/>
+<hr style="border:1px solid #c6fdff;width:90%;"/>
+<br/>
+<p style="font-size:25px;color:#c6fdff;font-family:leftTextfont">
+Our modest list of services to
+suit all your digital needs
 </p>
 </div>
 

@@ -18,6 +18,15 @@ font-family:leftTextfont;
 src:url('fonts/Audiowide-Regular.ttf');
 }
 
+@font-face{
+font-family:tomorrow;
+src:url('fonts/Tomorrow-Regular.ttf');
+}
+
+@font-face{
+font-family:blinker;
+src:url('fonts/Blinker-Regular.ttf');
+}
 
 @font-face{
 font-family:logoFont;
@@ -193,12 +202,12 @@ display:none;
 /*about us*/
 
 #aboutus{font-family:sans-serif;padding:0px 0px 0px 0px;background-size:100% 100%;background-image:url('images/2.png');display:flex;flex-direction:row;justify-content:space-around;}
-#aboutus #leftbox{width:40%;color:white;font-weight:lighter;height:100%;display:flex;align-items:center;margin-top:0%;padding:0% 0% 10% 5%;}
+#aboutus #leftbox{width:40%;color:white;font-weight:lighter;height:100%;justify-content:center;flex-direction:column;display:flex;align-items:start;margin-top:0%;padding:0% 0% 10% 2%;}
 #aboutus #rightbox{width:60%;padding:5% 0px 5% 50px;display:flex;flex-direction:column;justify-content:flex-end;}
 #aboutus #rightbox .doubleBox{transform:scale(0);width:100%;height:30%;margin-bottom:3%;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-end;align-items:flex-end;}
 #aboutus #rightbox .doubleBox #contentBox{color:white;align-items:center;width:50%;height:100%;display:flex;flex-direction:row;}
-#aboutus #rightbox .doubleBox #contentBox h2{color:white;}
-#aboutus #rightbox .doubleBox #contentBox .mainBox{color:#c6fdff;width:60%;height:100%;margin-top:0;border:1px solid transparent;}
+#aboutus #rightbox .doubleBox #contentBox h2{color:white;font-family:tomorrow;}
+#aboutus #rightbox .doubleBox #contentBox .mainBox{font-family:blinker;color:#c6fdff;width:60%;height:100%;margin-top:0;border:1px solid transparent;}
 @media only screen and (min-width:1500px){
 #aboutus #leftbox{margin-top:0%;}
 #aboutus #rightbox .doubleBox #contentBox{align-items:start;}
