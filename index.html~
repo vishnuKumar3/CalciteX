@@ -874,7 +874,7 @@ Trouble-free support is what we offer.
 		<div id="contact-right">
 			<form action="mailto:support@calcitex.com" method="post" enctype="multipart/form-data">
 				<p></p>
-				<input type="text" autofocus placeholder="Name" name="name"/>
+				<input type="text" placeholder="Name" name="name"/>
 				<input type="text" placeholder="Email" name="email"/>
 				<input type="text" placeholder="Subject" name="subject"/>
 				<textarea rows="8" placeholder="Message" name="message" cols="110"></textarea>
@@ -926,6 +926,9 @@ return true;
 function select(){
 return false;
 }
+
+window.onload=starter();
+function starter(){document.documentElement.scrollTop=0;}
 
 var employee={
 	0:[
