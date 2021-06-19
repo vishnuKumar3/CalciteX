@@ -917,7 +917,7 @@ Trouble-free support is what we offer.
 
 <script>
 
-if(document.readystate=="interactive"){alert("loading")}
+if(document.readyState=="interactive"){alert("loading");}
 
 document.oncontextmenu=context;
 document.onselectstart=select;
