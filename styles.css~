@@ -1237,3 +1237,5 @@ margin-right:10%;
 #footer a{cursor:pointer;text-decoration:none;}
 #footer div{margin-top:2%;width:5%;justify-content:space-between;}
 
+
+@keyframes mobile{from{width:0%;} to{width:100%;}}
