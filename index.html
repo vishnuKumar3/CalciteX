@@ -22,11 +22,12 @@
 </head>
 
 <body onscroll="myfunction()">
+<div id="body" style="height:100%;">
 	<!--header-->
 	<div id="navbar">
  	<ul id="ul">
 		<div id="logo">
-	            <a style="font-family:logoFont;font-weight:bolder;cursor:pointer;" onclick="document.documentElement.scrollTop=0;">CalciteX</a>
+	            <a onclick="document.documentElement.scrollTop=0;">CalciteX</a>
 		</div>
 		<div id="links">
                 <a onclick="document.documentElement.scrollTop=0;">Home</a>
@@ -358,21 +359,21 @@ Trouble-free support is what we offer.
 	<div id="temp1" id="contentService">Web</div>
 	</div>
 	<div id="one2" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
-	<img id="temp2" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/app.png"/>
-	<div id="temp2" id="contentService">App</div>
+	<img id="temp2" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/marketing.png"/>
+	<div id="temp2" id="contentService">Marketing</div>
 	</div>
 	<div id="one3" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
-	<img id="temp3" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/marketing.png"/>
-	<div id="temp3" id="contentService">Marketing</div>
+	<img id="temp3" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/app.png"/>
+	<div id="temp3" id="contentService">App</div>
 	</div>
 	<div id="one4" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
 	<img id="temp4" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/work.png"/>
 	<div id="temp4" id="contentService">Support</div>
 	</div>
-	<div id="one5" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
+	<!--<div id="one5" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
 	<img id="temp5" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/chemical.png"/>
 	<div id="temp5" id="contentService">Chemical</div>
-	</div>
+	</div>-->
 	</div>
 	</div>
 	</div>
@@ -899,7 +900,7 @@ Trouble-free support is what we offer.
 	</div>
 
 	<div id="footer">
-		<p>support@calcitex.gmail.com</p>
+		<p>support@calcitex.com</p>
 		<p>+91 8179033458</p>
 		<p>Koushik Enclave</p>
 		<p>Bharathi Nagar Colony</p>
@@ -912,6 +913,15 @@ Trouble-free support is what we offer.
 		</div><br/><br/>
 		<p>Copyright &#169 2021 CalciteX </p>
 	</div>
+</div>
+
+<div id="mobile" style="width:100%;height:100%;">
+<div style="width:100%;height:100%;background:black;display:flex;flex-direction:column;justify-content:center;align-items:center;">
+<img src="hook.png" style="width:90%;height:50%;">
+<p style="font-size:20px;color:white;margin-top:5%;font-family:tomorrow;">Mobile view is under construction</p>
+</div>
+</div>
+
 </body>
 
 
@@ -920,13 +930,26 @@ Trouble-free support is what we offer.
 document.oncontextmenu=context;
 document.onselectstart=select;
 function context(){
-return false;
+return true;
 }
 
 function select(){
-return false;
+return true;
 }
 
+
+window.onload=starter();
+
+function starter(){
+if(window.innerWidth<1000){
+document.getElementById("body").style.display="none";
+document.getElementById("mobile").style.display="block";
+}
+else{
+document.getElementById("body").style.display="block";
+document.getElementById("mobile").style.display="none";
+}
+}
 
 var employee={
 	0:[
@@ -1171,14 +1194,14 @@ ele[i].style.animationDelay=(i/5)+"s";
 }
 }
 
-var headings=["UI design","web development","App development","Digital Marketing","Support","Chemical Engineering"];
+var headings=["UI design","Web Development","Digital Marketing","App Development","Support"/*,"Chemical Engineering"*/];
 var content=[
 "<p>A Fabulous Collection Of Unique Design Ideas With Custom-Made Interfaces Is A True Work Of Design And Style. Design is one of the most important factors when building a brand.</p> <br/><p>The design is what will set you apart from your competition and help you get the desired emotion or feeling from customers.With An Abundance Of Unique Design Styles, We Offer You Customization And Modern Style.</p>",
 " <p>A website establishes your Business, adds value and credibility. In the cyber world, there are millions of websites, no matter how good your services are; the main goal is to stand out.</p><br/><p>Here with Cutting edge designs and functionality, we design the exact website you need for your business.While It Comes To Web Development Its Our Best And Most Demanding Service With 100% Guaranteed Satisfaction</p>",
-"<p>With Growing demand in this Digital World we are committed to develop the perfect Mobile Application that your Business needs, with an Attractive price in mind.</p><br/><p> With an Attractive Price in mindWe have an answer to your requests, if your business is struggling or you want to reach more people, a Mobile 		Application is what you need.We are Experts in the fields of</p> <br/> <li>E-Commerce</li><li>Restaurants, Nightlife and Clubs</li><li>Jewellery store </li><li>Small Business Owners … And many more</li>",
 "<p>Around 4 Billion People use Social Media in the current scenario, and the numbers are still growing exponentially. Your customers are online, which highlights the importance of digital marketing. They’re browsing the web looking for your products or services.<p> <br/><p>If they can’t find your products because you don’t have an online presence, you risk losing those leads to your competitors.We at CalciteX Provide Businesses Of All Sizes With An Opportunity To Market Their Brand 24/7 At A Low Cost. From Startups To Medium-Sized Enterprises To Multiple-Location Companies",
-"<p>Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.</p>",
-"<p>We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production.</p>"
+"<p>With Growing demand in this Digital World we are committed to develop the perfect Mobile Application that your Business needs, with an Attractive price in mind.</p><br/><p> With an Attractive Price in mindWe have an answer to your requests, if your business is struggling or you want to reach more people, a Mobile 		Application is what you need.We are Experts in the fields of</p> <br/> <li>E-Commerce</li><li>Restaurants, Nightlife and Clubs</li><li>Jewellery store </li><li>Small Business Owners … And many more</li>",
+"<p>Proactive chat, audio, and video Support. Trouble-free support is what we offer. Every request is responded by the supervisors directly.</p>"
+/*,"<p>We help our Clients with Analysis of current status of the Products and Enhance the quality of it.We believe in Recycling Plastics and Analyse the Break-even costs for the Production.</p>"*/
 ]
 var number="";
 function display(event){
@@ -1188,12 +1211,13 @@ if(event.target.id.charAt(event.target.id.length-1)!=number){
 	needle.style.animationName="temp";
 	needle.style.animationDuration="1s";
 	var degree;
-	if(number==0){degree=30;}
-	else if(number==1){degree=70;}
-	else if(number==3){degree=200;}
-	else if(number==4){degree=260;}
-	else {degree=(number)*60;}
-	degree=degree+60+"deg";
+	if(number==0){degree=0;}
+	else if(number==1){degree=65;}
+	else if(number==2){degree=153;}
+	else if(number==3){degree=245;}
+	else if(number==4){degree=295;}
+	else {degree=(number)*70;}
+	degree=degree+70+"deg";
 	needle.style.transform=`rotate(${degree})`;
 	var ele=document.getElementById("heading");
 	var inContent=document.getElementById("innercontent");

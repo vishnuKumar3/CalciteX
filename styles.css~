@@ -89,9 +89,14 @@ padding-top:20px;
 }
 
 #navbar ul div:nth-child(1){
-font-weight:bolder;
 padding-top:10px;
 margin-left:5%;
+}
+
+#navbar ul div:nth-child(1) a{
+font-family:logoFont;
+font-weight:bolder;
+cursor:pointer;
 font-size:30px;
 color:white;
 }
@@ -307,11 +312,12 @@ margin-right:2%;
 #ourServices .services{border:1px solid transparent;padding:10px;width:0px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
 @keyframes rotateWheel{from{transform:rotate(0deg) translate(0px) rotate(0deg);} to{transform:rotate(360deg) translate(0px) rotate(360deg);}}
 #ourServices #one0{position:absolute;transform:rotate(50deg) translateY(180px) rotate(-50deg);}
-#ourServices #one1{position:absolute;transform:rotate(105deg) translateY(250px) rotate(-105deg);}
-#ourServices #one2{position:absolute;transform:rotate(150deg) translateY(320px) rotate(-150deg);}
-#ourServices #one3{position:absolute;transform:rotate(200deg) translateY(300px) rotate(-200deg);}
-#ourServices #one4{position:absolute;transform:rotate(250deg) translateY(230px) rotate(-250deg);}
-#ourServices #one5{position:absolute;transform:rotate(300deg) translateY(190px) rotate(-300deg);}
+#ourServices #one1{position:absolute;transform:rotate(110deg) translateY(250px) rotate(-110deg);}
+#ourServices #one2{position:absolute;transform:rotate(175deg) translateY(300px) rotate(-175deg);}
+#ourServices #one3{position:absolute;transform:rotate(250deg) translateY(250px) rotate(-250deg);}
+#ourServices #one4{position:absolute;transform:rotate(305deg) translateY(180px) rotate(-305deg);}
+/*position:absolute;transform:rotate(150deg) translateY(320px) rotate(-150deg);*/
+/*#ourServices #one5{position:absolute;transform:rotate(310deg) translateY(180px) rotate(-310deg);}*/
 @keyframes servicesAnim{from{opacity:0;} to{opacity:1;}}
 
 @keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
@@ -734,12 +740,14 @@ width:100%;
 #Responsive #ResponsiveBox .ResponsiveDiv{width:25%;height:100%;animation:imgAnim 1s;display:flex;align-items:center;justify-content:space-around;}
 #Responsive #ResponsiveBox div:nth-child(1) img{width:30%;height:60%;}
 #Responsive #ResponsiveBox div:nth-last-child(1) img{width:30%;height:60%;}
+
 @media only screen and (min-width:1500px){
 #Responsive #ResponsiveBox .ResponsiveDiv{justify-content:center;}
-#responsive-top{width:60%;margin-left:20%;margin-right:20%;}
-#Responsive #ResponsiveBox div:nth-child(1) img{width:40%;height:40%;}
-#Responsive #ResponsiveBox div:nth-last-child(1) img{width:40%;height:40%;}
+#responsive-top{width:80%;margin-left:10%;margin-right:10%;}
+#Responsive #ResponsiveBox div:nth-child(1) img{width:30%;height:40%;}
+#Responsive #ResponsiveBox div:nth-last-child(1) img{width:30%;height:40%;}
 }
+
 #Responsive #circles{display:flex;justify-content:center;height:10%;}
 #Responsive #circles #circle0,#circles #circle1,#circles #circle2{margin-right:2%;width:20px;cursor:pointer;height:20px;border:1px solid black;border-radius:100%;transition:2s;}
 @keyframes imgAnim{from{opacity:0;} to{opacity:1;}}
@@ -1221,7 +1229,7 @@ margin-right:10%;
 
 
 #footer{height:100%;justify-content:center;background:black;color:white;display:flex;flex-direction:column;align-items:center;}
-#footer p:nth-child(1){font-size:50px;font-family:leftTextfont;}
+#footer p:nth-child(1){font-size:40px;font-family:leftTextfont;}
 #footer p:nth-child(2){font-size:30px;font-family:tomorrow;margin-top:1%;}
 #footer p:nth-child(3){font-size:20px;font-family:blinker;margin-top:5%;}
 #footer p{font-size:20px;margin-top:0.5%;}
