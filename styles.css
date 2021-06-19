@@ -89,10 +89,14 @@ padding-top:20px;
 }
 
 #navbar ul div:nth-child(1){
-font-weight:bolder;
 padding-top:10px;
 margin-left:5%;
+}
+
+#navbar ul div:nth-child(1) a{
 font-family:logoFont;
+font-weight:bolder;
+cursor:pointer;
 font-size:30px;
 color:white;
 }
