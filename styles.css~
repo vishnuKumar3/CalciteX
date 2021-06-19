@@ -709,8 +709,17 @@ width:100%;
 /*responsive page start*/
 
 #Responsive{color:white;width:100%;overflow:hidden;height:100%;background-size:100% 100%;overflow:hidden;background:url('images/5.png');}
+#responsive-top{width:80%;height:100%;margin-left:10%;margin-right:10%;overflow-x:hidden;}
 #Responsive #ResponsiveBox{width:400%;height:90%;display:flex;flex-direction:row;animation-fill-mode:both;}
-#Responsive #ResponsiveBox .ResponsiveDiv{width:25%;bheight:100%;animation:imgAnim 1s;display:flex;align-items:center;justify-content:space-around;}
+#Responsive #ResponsiveBox .ResponsiveDiv{width:25%;height:100%;animation:imgAnim 1s;display:flex;align-items:center;justify-content:space-around;}
+#Responsive #ResponsiveBox div:nth-child(1) img{width:30%;height:60%;}
+#Responsive #ResponsiveBox div:nth-last-child(1) img{width:30%;height:60%;}
+@media only screen and (min-width:1500px){
+#Responsive #ResponsiveBox .ResponsiveDiv{justify-content:center;}
+#responsive-top{width:60%;margin-left:20%;margin-right:20%;}
+#Responsive #ResponsiveBox div:nth-child(1) img{width:40%;height:40%;}
+#Responsive #ResponsiveBox div:nth-child(4) img{width:40%;height:40%;}
+}
 #Responsive #circles{display:flex;justify-content:center;height:10%;}
 #Responsive #circles #circle0,#circles #circle1,#circles #circle2{margin-right:2%;width:20px;cursor:pointer;height:20px;border:1px solid black;border-radius:100%;transition:2s;}
 @keyframes imgAnim{from{opacity:0;} to{opacity:1;}}

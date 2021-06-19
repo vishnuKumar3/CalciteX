@@ -569,7 +569,7 @@ Trouble-free support is what we offer.
 -->
 <!--responsive page start-->
 	<div id="Responsive">
-	<div style="width:80%;height:100%;margin-left:10%;margin-right:10%;overflow-x:hidden;">
+	<div  id="responsive-top">
 	<div id="ResponsiveBox">
 
 	<div class="ResponsiveDiv">
@@ -580,7 +580,7 @@ Trouble-free support is what we offer.
 	SUPPORT
 	</p>
 	</div>
-	<img src="icons/idea.png" style="width:30%;height:60%;">
+	<img src="icons/idea.png">
 	</div>
 
 	<div class="ResponsiveDiv" >
@@ -608,7 +608,7 @@ Trouble-free support is what we offer.
 	</div>
 
 	<div class="ResponsiveDiv" >
-	<p style="width:80%;text-align:center;font-size:50px;font-family:tomorrow;color:#C6FDFF;">
+	<p style="width:80%;text-align:center;font-size:60px;font-family:tomorrow;color:#C6FDFF;">
 	DESIGN <img src="icons/add.png" style="width:5%;height:5%;"> DEVELOPMENT<br/>
 	&nbsp&nbsp&nbspMARKETING   <img src="icons/add.png" style="width:5%;height:5%;"> SOCIAL
 	</p>
