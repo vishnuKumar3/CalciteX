@@ -616,16 +616,17 @@ Trouble-free support is what we offer.
 
 	<div class="ResponsiveDiv" id="Div1" >
 	<div style="width:49%;height:80%;display:flex;align-items:center;"> 
-	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;">
+	<p style="font-size:80px;width:50%;height:50%;margin-left:10%;font-family:tomorrow;">
 	24/7<br/>
 	DEDICATED<br/>
 	SUPPORT
 	</p>
 	</div>
-	<img src="icons/idea.png" style="width:30%;height:60%;">
+	<img src="icons/idea.png">
 	</div>
 
 	</div>
+
 	<div id="circles">
 	<button style="background:rgb(225,1,88);" onclick="responsiveFunction(0)" id="circle0"></button>
 	<button onclick="responsiveFunction(1)"  id="circle1"></button>
