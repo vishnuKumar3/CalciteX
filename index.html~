@@ -29,19 +29,14 @@
 			CalciteX
 		</div>
 		<div id="links">
-                <a style="border-bottom:2px solid #eeb0df;border-top:2px solid #eeb0df;" href="#header">Home</a>
-
-                <a style="border-bottom:2px solid #c6fdff;border-top:2px solid #c6fdff;" onclick="document.documentElement.scrollTop=document.getElementById('aboutus').offsetTop-60;">About&nbspUs</a>
-
-                <a style="border-bottom:2px solid #ffa1a1;border-top:2px solid #ffa1a1;" onclick="document.documentElement.scrollTop=document.getElementById('ourServices').offsetTop-60;">Services</a>
-
-                <a style="border-bottom:2px solid #eeb0df;border-top:2px solid #eeb0df;" onclick="document.documentElement.scrollTop=document.getElementById('skills').offsetTop-60;">Skills</a>
-
-		<a style="border-bottom:2px solid #c6fdff;border-top:2px solid #c6fdff;" onclick="document.documentElement.scrollTop=document.getElementById('Responsive').offsetTop-60;">Support</a>
-
-                <a style="border-bottom:2px solid #ffa1a1;border-top:2px solid #ffa1a1;" onclick="document.documentElement.scrollTop=document.getElementById('workflow').offsetTop-60;">Work</a>
+                <a href="#header">Home</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('aboutus').offsetTop-60;">About&nbspUs</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('ourServices').offsetTop-60;">Services</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('skills').offsetTop-60;">Skills</a>
+		<a onclick="document.documentElement.scrollTop=document.getElementById('Responsive').offsetTop-60;">Support</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('workflow').offsetTop-60;">Work</a>
 		<!--<a href="#pricing">Pricing</a>-->
-                <a style="border-bottom:2px solid #eeb0df;border-top:2px solid #eeb0df;" onclick="document.documentElement.scrollTop=document.getElementById('contact').offsetTop-60;">Contact&nbspUs</a>
+                <a onclick="document.documentElement.scrollTop=document.getElementById('contact').offsetTop-60;">Contact&nbspUs</a>
 		</div>
 		<div>
 		</div>
@@ -655,8 +650,8 @@ Trouble-free support is what we offer.
 	</div>
 	<div id="workrightBox">
 	<div id="videoBox">
-	<button style="border:none;background:none;margin-top:30%;" onclick="videoFunction()" id="nextButton" ><img style="width:100%;height:100%;" src="icons/plane4.png"></button>
-	<video style="width:70%;height:70%;display:none;margin-top:25%;" src="plane_video/plane.mp4" id="planeVideo">
+	<button style="border:none;background:none;margin-top:30%;" onclick="videoFunction()" id="nextButton" ><img style="width:70%;height:70%;" src="icons/plane4.png"></button>
+	<video style="width:100%;height:90%;display:none;margin-top:30%;" src="plane_video/plane.mp4" id="planeVideo">
 	</div>
 	<div id="rightmsg">Click the plane to see how we work</div>
 	<!--<svg style="margin-left:10%;" width="500" height="100">
