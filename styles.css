@@ -123,13 +123,29 @@ flex-direction:column;
 align-items:center;
 }
 
-#navbar ul #links a:hover{
+#navbar ul #links a{
 padding:3px 0px 6px 0px;
-color:rgb(255,2,108); 
-border-bottom:2px solid rgb(255,2,108);
-border-top:2px solid rgb(255,2,108);
+color:white;
 border-radius:5px;
 transition:0.2s;
+}
+
+#navbar ul #links a:nth-child(1):hover,a:nth-child(4):hover,a:nth-child(7):hover{
+color:#eeb0df;
+border-bottom:2px solid #eeb0df;
+border-top:2px solid #eeb0df;
+}
+
+#navbar ul #links a:nth-child(2):hover,a:nth-child(5):hover{
+color:#c6fdff;
+border-bottom:2px solid #c6fdff;
+border-top:2px solid #c6fdff;
+}
+
+#navbar ul #links a:nth-child(3):hover,a:nth-child(6):hover{
+color:#ffa1a1;
+border-bottom:2px solid #ffa1a1;
+border-top:2px solid #ffa1a1;
 }
 
 #header .mainBox .button a:hover{
@@ -1191,15 +1207,18 @@ margin-right:10%;
 /*contact us*/
 #contact{height:160%;width:100%;display:flex;background:url('images/7.png');background-size:100% 100%;}
 #contact-left{width:30%;height:100%;display:flex;margin-left:5%;align-items:center;color:#EEB0DF;font-size:80px;font-family:leftTextfont;}
-@media only screen and (min-width:1500px){
-#contact{height:130%;}
-#contact-left{margin-left:10%;}
-}
 #contact-right{padding:0% 5% 0% 5%;width:65%;height:100%;font-family:blinker;}
 #contact-right form p:nth-child(1){font-size:30px;font-family:tomorrow;color:white;padding:20% 0% 5% 0%;}
 #contact-right input[type="text"],textarea{width:95%;padding:5% 0% 0% 1%;color:white;font-size:20px;background:none;border-bottom:1px solid white;}
 #contact-right input[type="submit"]{width:95%;padding:2% 0% 2% 0%;font-size:20px;margin-top:5%;background:#EEB0DF;color:black;cursor:pointer;border-radius:5px;}
 #contact-desc{display:flex;justify-content:space-between;margin-top:5%;color:white;font-size:20px;}
+
+@media only screen and (min-width:1500px){
+#contact{height:130%;}
+#contact-left{margin-left:10%;}
+#contact-right input[type="text"],textarea{width:70%;}
+#contact-right input[type="submit"]{width:70%;}
+}
 
 
 #footer{height:100%;justify-content:center;background:black;color:white;display:flex;flex-direction:column;align-items:center;}

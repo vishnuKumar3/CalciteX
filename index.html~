@@ -29,14 +29,19 @@
 			CalciteX
 		</div>
 		<div id="links">
-                <a href="#header">Home</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('aboutus').offsetTop-60;">About&nbspUs</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('ourServices').offsetTop-60;">Services</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('skills').offsetTop-60;">Skills</a>
-		<a onclick="document.documentElement.scrollTop=document.getElementById('Responsive').offsetTop-60;">Support</a>
-                <a onclick="document.documentElement.scrollTop=document.getElementById('workflow').offsetTop-60;">Work</a>
+                <a style="border-bottom:2px solid #eeb0df;border-top:2px solid #eeb0df;" href="#header">Home</a>
+
+                <a style="border-bottom:2px solid #c6fdff;border-top:2px solid #c6fdff;" onclick="document.documentElement.scrollTop=document.getElementById('aboutus').offsetTop-60;">About&nbspUs</a>
+
+                <a style="border-bottom:2px solid #ffa1a1;border-top:2px solid #ffa1a1;" onclick="document.documentElement.scrollTop=document.getElementById('ourServices').offsetTop-60;">Services</a>
+
+                <a style="border-bottom:2px solid #eeb0df;border-top:2px solid #eeb0df;" onclick="document.documentElement.scrollTop=document.getElementById('skills').offsetTop-60;">Skills</a>
+
+		<a style="border-bottom:2px solid #c6fdff;border-top:2px solid #c6fdff;" onclick="document.documentElement.scrollTop=document.getElementById('Responsive').offsetTop-60;">Support</a>
+
+                <a style="border-bottom:2px solid #ffa1a1;border-top:2px solid #ffa1a1;" onclick="document.documentElement.scrollTop=document.getElementById('workflow').offsetTop-60;">Work</a>
 		<!--<a href="#pricing">Pricing</a>-->
-                <a onclick="document.documentElement.scrollTop=document.getElementById('contact').offsetTop-60;">Contact&nbspUs</a>
+                <a style="border-bottom:2px solid #eeb0df;border-top:2px solid #eeb0df;" onclick="document.documentElement.scrollTop=document.getElementById('contact').offsetTop-60;">Contact&nbspUs</a>
 		</div>
 		<div>
 		</div>
@@ -371,7 +376,7 @@ Trouble-free support is what we offer.
 	</div>
 	<div id="one5" onmouseover="display(event)"  class="services" style="width:100px;height:100px;border-radius:10%;">
 	<img id="temp5" onmouseover="display(event)" style="width:100%;height:100%;" src="icons_color/chemical.png"/>
-	<div id="temp5" id="contentService">Chemical Enginnering</div>
+	<div id="temp5" id="contentService">Chemical</div>
 	</div>
 	</div>
 	</div>
@@ -881,17 +886,17 @@ Trouble-free support is what we offer.
 				<input type="submit" value="submit">
 			</form>
 			<div id="contact-desc">
-				<div style="width:50%;">
+				<div style="width:40%;">
 				
 				<p>Feel free to contact us anytime you want if you have any doubt about our services/packages</p>
 				</div>
 		
 				<div style="width:40%;">
-					<p>Email: support@calcitex.com</p>
+					<!--<p>Email: support@calcitex.com</p>
 					<br/>
 		         		<p>Phone/WhatsApp: +91 8179033458</p>
 					<br/>
-  		                        <p>Address: Koushik Enclave, Bharathi Nagar Colony, Temple Alwal, Secunderabad, India - 500010</p>
+  		                        <p>Address: Koushik Enclave, Bharathi Nagar Colony, Temple Alwal, Secunderabad, India - 500010</p>-->
 				</div>
 			</div>
 			
