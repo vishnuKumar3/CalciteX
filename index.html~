@@ -569,6 +569,7 @@ Trouble-free support is what we offer.
 -->
 <!--responsive page start-->
 	<div id="Responsive">
+	<div style="width:80%;height:100%;margin-left:10%;margin-right:10%;overflow-x:hidden;">
 	<div id="ResponsiveBox">
 
 	<div class="ResponsiveDiv">
@@ -607,7 +608,7 @@ Trouble-free support is what we offer.
 	</div>
 
 	<div class="ResponsiveDiv" >
-	<p style="width:80%;text-align:center;font-size:80px;font-family:tomorrow;color:#C6FDFF;">
+	<p style="width:80%;text-align:center;font-size:50px;font-family:tomorrow;color:#C6FDFF;">
 	DESIGN <img src="icons/add.png" style="width:5%;height:5%;"> DEVELOPMENT<br/>
 	&nbsp&nbsp&nbspMARKETING   <img src="icons/add.png" style="width:5%;height:5%;"> SOCIAL
 	</p>
@@ -629,6 +630,7 @@ Trouble-free support is what we offer.
 	<button style="background:rgb(225,1,88);" onclick="responsiveFunction(0)" id="circle0"></button>
 	<button onclick="responsiveFunction(1)"  id="circle1"></button>
 	<button onclick="responsiveFunction(2)" id="circle2"></button>
+	</div>
 	</div>
 	</div>
 
@@ -870,7 +872,7 @@ Trouble-free support is what we offer.
 	
 		<div id="contact-right">
 			<form action="mailto:support@calcitex.com" method="post" enctype="multipart/form-data">
-				<p>Ghostly white figures in coveralls and helmets are soflty dancing of the cosmic</p>
+				<p></p>
 				<input type="text" autofocus placeholder="Name" name="name"/>
 				<input type="text" placeholder="Email" name="email"/>
 				<input type="text" placeholder="Subject" name="subject"/>
@@ -906,7 +908,7 @@ Trouble-free support is what we offer.
 		<div style="display:flex;">
 		<a><i class="fab fa-instagram"></i></a>
 		<a><i class="fab fa-linkedin"></i></a>
-		</div><br/>
+		</div><br/><br/>
 		<p>Copyright &#169 2021 CalciteX </p>
 	</div>
 </body>
@@ -1072,8 +1074,8 @@ videoParam.style.display="block";
 indexParam=-1;
 rightText.style.display="none";
 ButtonParam.style.display="none";
-displayParam=window.setInterval(displayMsg,1000);
-videoParam.playbackRate=0.8;
+displayParam=window.setInterval(displayMsg,1500);
+videoParam.playbackRate=0.5;
 videoParam.play();
 }
 
