@@ -917,10 +917,12 @@ Trouble-free support is what we offer.
 
 <script>
 
+if(document.readystate=="interactive"){alert("loading");}
+
 document.oncontextmenu=context;
 document.onselectstart=select;
 function context(){
-return true;
+return false;
 }
 
 function select(){
