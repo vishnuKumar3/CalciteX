@@ -26,7 +26,7 @@
 	<div id="navbar">
  	<ul id="ul">
 		<div id="logo">
-			CalciteX
+	            <a onclick="document.documentElement.scrollTop=0;">CalciteX</a>
 		</div>
 		<div id="links">
                 <a onclick="document.documentElement.scrollTop=0;">Home</a>
@@ -916,8 +916,6 @@ Trouble-free support is what we offer.
 
 
 <script>
-
-if(document.readyState=="interactive"){alert("loading");}
 
 document.oncontextmenu=context;
 document.onselectstart=select;
