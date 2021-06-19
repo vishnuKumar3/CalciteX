@@ -210,10 +210,16 @@ display:none;
 #aboutus #rightbox .doubleBox #contentBox{color:white;align-items:center;width:50%;height:100%;display:flex;flex-direction:row;}
 #aboutus #rightbox .doubleBox #contentBox h2{color:#c6fdff;font-family:tomorrow;}
 #aboutus #rightbox .doubleBox #contentBox img{transform:scale(1);width:100%;height:100%;}
-#aboutus #rightbox .doubleBox #contentBox .mainBox{font-family:blinker;color:white;width:60%;height:100%;margin-top:0;border:1px solid transparent;}
+#aboutus #rightbox .doubleBox #contentBox .mainBox{font-family:blinker;color:white;width:70%;height:100%;margin-top:0;border:1px solid transparent;}
+#aboutus #rightbox .doubleBox #contentBox div:nth-child(1){width:20%;}
+#aboutus #rightbox .doubleBox #contentBox{justify-content:space-around;}
+
 @media only screen and (min-width:1500px){
+#aboutus #rightbox .doubleBox #contentBox div:nth-child(1){width:15%;}
+#aboutus #rightbox .doubleBox #contentBox{justify-content:center;}
 #aboutus #leftbox{margin-top:0%;}
 #aboutus #rightbox .doubleBox #contentBox{align-items:start;}
+#aboutus #leftbox{padding:0% 0% 10% 10%;}
 }
 
 @media only screen and (max-width:1000px){
@@ -297,11 +303,11 @@ margin-right:2%;
 @keyframes opacity1Anim{from{opacity:0;} to{opacity:1;}}
 #ourServices #heading{font-size:80px;white-space:pre;font-family:leftTextfont;border:1px solid transparent;width:95%;height:10%;margin:2% 0% 0% -30%;border-radius:10px;color:#ffa1a1;padding-top:2px;}
 #ourServices #innercontent {font-family:serviceFont;font-size:22px;border:1px solid transparent;width:92%;height:80%;margin:2% 0% 0% 2%;border-radius:10px;color:white;padding:10px 0px 0px 0px;}
-#ourServices #innercontent p{font-family:blinker;text-indent:10%;}
+#ourServices #innercontent p{font-family:blinker;text-indent:0%;}
 #ourServices #innercontent li{font-family:blinker;}
 
 @media only screen and (min-width:1500px){
-#ourServices #heading{margin-top:40%;margin-left:-15%;}
+#ourServices #heading{margin-top:40%;margin-left:-5%;}
 }
 
 @media only screen and (max-width:1000px){
@@ -477,15 +483,14 @@ background-size:100% 100%;
 display:flex;
 font-family:leftTextfont;
 align-items:center;
-white-space:pre;
 font-size:80px;
-width:40%;
+width:30%;
 color:#EEB0DF;
-margin-left:-10%;
+margin-left:5%;
 }
 
 @media only screen and (min-width:1500px){
-#skillsLeft{margin-left:-5%;}
+#skillsLeft{margin-left:10%;}
 }
 
 .skill-bars {
@@ -718,7 +723,7 @@ width:100%;
 #Responsive #ResponsiveBox .ResponsiveDiv{justify-content:center;}
 #responsive-top{width:60%;margin-left:20%;margin-right:20%;}
 #Responsive #ResponsiveBox div:nth-child(1) img{width:40%;height:40%;}
-#Responsive #ResponsiveBox div:nth-child(4) img{width:40%;height:40%;}
+#Responsive #ResponsiveBox div:nth-last-child(1) img{width:40%;height:40%;}
 }
 #Responsive #circles{display:flex;justify-content:center;height:10%;}
 #Responsive #circles #circle0,#circles #circle1,#circles #circle2{margin-right:2%;width:20px;cursor:pointer;height:20px;border:1px solid black;border-radius:100%;transition:2s;}
@@ -1185,10 +1190,11 @@ margin-right:10%;
 
 /*contact us*/
 #contact{height:160%;width:100%;display:flex;background:url('images/7.png');background-size:100% 100%;}
+#contact-left{width:30%;height:100%;display:flex;margin-left:5%;align-items:center;color:#EEB0DF;font-size:80px;font-family:leftTextfont;}
 @media only screen and (min-width:1500px){
 #contact{height:130%;}
+#contact-left{margin-left:10%;}
 }
-#contact-left{width:30%;height:100%;display:flex;margin-left:5%;align-items:center;color:#EEB0DF;font-size:80px;font-family:leftTextfont;}
 #contact-right{padding:0% 5% 0% 5%;width:65%;height:100%;font-family:blinker;}
 #contact-right form p:nth-child(1){font-size:30px;font-family:tomorrow;color:white;padding:20% 0% 5% 0%;}
 #contact-right input[type="text"],textarea{width:95%;padding:5% 0% 0% 1%;color:white;font-size:20px;background:none;border-bottom:1px solid white;}
