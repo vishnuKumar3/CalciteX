@@ -1175,9 +1175,9 @@ margin-right:10%;
 /* contact us end */
 
 /*contact us*/
-#contact{height:160%;width:100%;display:flex;background:url('images/7.png');background-size:100% 100%;}
+#contact{height:160%;overflow-y:scroll;width:100%;display:flex;background:url('images/7.png');background-size:100% 100%;}
 @media only screen and (min-width:1500px){
-#contact{height:110%;}
+#contact{height:130%;}
 }
 #contact-left{width:30%;height:100%;display:flex;margin-left:5%;align-items:center;color:#EEB0DF;font-size:80px;font-family:leftTextfont;}
 #contact-right{padding:0% 5% 0% 5%;width:65%;height:100%;font-family:blinker;}
@@ -1188,9 +1188,6 @@ margin-right:10%;
 
 
 #footer{height:100%;justify-content:center;background:black;color:white;display:flex;flex-direction:column;align-items:center;}
-@media only screen and (min-width:1500px){
-#footer{height:100%;justify-content:center;}
-}
 #footer p:nth-child(1){font-size:50px;font-family:leftTextfont;}
 #footer p:nth-child(2){font-size:30px;font-family:tomorrow;margin-top:1%;}
 #footer p:nth-child(3){font-size:20px;font-family:blinker;margin-top:5%;}
