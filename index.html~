@@ -95,7 +95,7 @@ suit all your digital needs
 
 <div id="contentBox">
 <div>
-<i class="fa fa-heart" style="border:1px solid blue;font-size:70px;color:white;"></i>
+<i class="fa fa-heart" style="font-size:70px;color:white;"></i>
 <!--<img src="images/1.jpeg">-->
 </div>
 <div class="mainBox">
@@ -1190,7 +1190,8 @@ if(event.target.id.charAt(event.target.id.length-1)!=number){
 	var degree;
 	if(number==0){degree=30;}
 	else if(number==1){degree=70;}
-	else if(number==3){degree=170;}
+	else if(number==3){degree=200;}
+	else if(number==4){degree=260;}
 	else {degree=(number)*60;}
 	degree=degree+60+"deg";
 	needle.style.transform=`rotate(${degree})`;

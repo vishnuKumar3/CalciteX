@@ -215,7 +215,7 @@ display:none;
 #aboutus #rightbox .doubleBox #contentBox{justify-content:space-around;}
 
 @media only screen and (min-width:1500px){
-#aboutus #rightbox .doubleBox #contentBox div:nth-child(1){width:15%;}
+#aboutus #rightbox .doubleBox #contentBox div:nth-child(1){width:18%;}
 #aboutus #rightbox .doubleBox #contentBox{justify-content:center;}
 #aboutus #leftbox{margin-top:0%;}
 #aboutus #rightbox .doubleBox #contentBox{align-items:start;}
@@ -291,12 +291,12 @@ margin-right:2%;
 #contentService{color:white;border:1px solid transparent;text-align:left;padding-left:15px;width:100px;border-radius:10px;}
 #ourServices .services{border:1px solid transparent;padding:10px;width:0px;margin-left:130px;text-align:center;animation-fill-mode:both;animation-timing-function:ease-out;opacity:0;display:none;color:white;transition:1s;cursor:pointer;}
 @keyframes rotateWheel{from{transform:rotate(0deg) translate(0px) rotate(0deg);} to{transform:rotate(360deg) translate(0px) rotate(360deg);}}
-#ourServices #one0{transform:rotate(60deg) translateY(180px) rotate(-60deg);}
-#ourServices #one1{transform:rotate(120deg) translateY(320px) rotate(-120deg);}
-#ourServices #one2{transform:rotate(150deg) translateY(550px) rotate(-150deg);}
-#ourServices #one3{transform:rotate(180deg) translateY(630px) rotate(-180deg);}
-#ourServices #one4{transform:rotate(200deg) translateY(600px) rotate(-200deg);}
-#ourServices #one5{transform:rotate(200deg) translateY(500px) rotate(-200deg);}
+#ourServices #one0{position:absolute;transform:rotate(50deg) translateY(180px) rotate(-50deg);}
+#ourServices #one1{position:absolute;transform:rotate(105deg) translateY(250px) rotate(-105deg);}
+#ourServices #one2{position:absolute;transform:rotate(150deg) translateY(320px) rotate(-150deg);}
+#ourServices #one3{position:absolute;transform:rotate(200deg) translateY(300px) rotate(-200deg);}
+#ourServices #one4{position:absolute;transform:rotate(250deg) translateY(230px) rotate(-250deg);}
+#ourServices #one5{position:absolute;transform:rotate(300deg) translateY(180px) rotate(-300deg);}
 @keyframes servicesAnim{from{opacity:0;} to{opacity:1;}}
 
 @keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
