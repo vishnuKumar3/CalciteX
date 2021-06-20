@@ -53,6 +53,21 @@ background-size:100% 100%;
 background-attachment:fixed;
 }
 
+@keyframes arrowAnim{from{bottom:7%;} to{bottom:3%;}}
+
+#down-arrow{
+animation:arrowAnim 0.8s linear infinite;
+cursor:pointer;
+text-decoration:none;
+font-size:40px;
+color:white;
+position:fixed;
+right:3%;
+bottom:3%;
+}
+
+	
+
 #headerImg{
 position:fixed;
 display:block;

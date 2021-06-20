@@ -42,6 +42,7 @@
 		<div>
 		</div>
             </ul>
+	<a onclick="downArrowFun()" id="down-arrow"><i class="fa fa-angle-down"></i></a>
 	</div>
 	<div id="headerImg"></div>
 	<div id="header">
@@ -1126,6 +1127,46 @@ lefttext.innerHTML=msgs[indexParam];}
 }
 
 
+function downArrowFun(){
+var about=document.getElementById("aboutus");
+var service=document.getElementById("ourServices");
+var skills=document.getElementById("skills");
+var responsive=document.getElementById("Responsive");
+var workflow=document.getElementById("workflow");
+var contact=document.getElementById("contact");
+var footer=document.getElementById("footer");
+var arrow=document.getElementById("down-arrow");
+var scrollrecog=document.documentElement;
+
+if(about.offsetTop-scrollrecog.scrollTop>150){
+scrollrecog.scrollTop=about.offsetTop-60;
+}
+else if(about.offsetTop-scrollrecog.scrollTop<=80 && service.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=service.offsetTop-60;
+}
+else if(service.offsetTop-scrollrecog.scrollTop<=80 && skills.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=skills.offsetTop-60;
+}
+else if(skills.offsetTop-scrollrecog.scrollTop<=80 && responsive.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=responsive.offsetTop-60;
+}
+else if(responsive.offsetTop-scrollrecog.scrollTop<=80 && workflow.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=workflow.offsetTop-60;
+}
+else if(workflow.offsetTop-scrollrecog.scrollTop<=80 && contact.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=contact.offsetTop-60;
+}
+else if(contact.offsetTop-scrollrecog.scrollTop<=80 && footer.offsetTop-scrollrecog.scrollTop>80){
+scrollrecog.scrollTop=footer.offsetTop-60;
+}
+else if(footer.offsetTop-scrollrecog.scrollTop<=80){
+var top=arrow.children;
+top[0].className="fa fa-angle-up";
+}
+
+
+}
+
 
 
 function myfunction(){
@@ -1134,7 +1175,19 @@ var navbar=document.getElementById("ul");
 var progress=document.getElementsByClassName("progress-line");
 var about=document.getElementById("aboutus");
 var icon=document.getElementById("headerImg");
+var footer=document.getElementById("footer");
+var arrow=document.getElementById("down-arrow");
+var scrollrecog=document.documentElement;
 
+if(footer.offsetTop-scrollrecog.scrollTop<=80){
+var top=arrow.children;
+top[0].className="fa fa-angle-up";
+}
+
+if(footer.offsetTop-scrollrecog.scrollTop>80){
+var top=arrow.children;
+top[0].className="fa fa-angle-down";
+}
 
 if(about.offsetTop-document.documentElement.scrollTop>550){
 icon.style.display="block";
@@ -1185,7 +1238,7 @@ serviceContent.style.animationName="serviceAnim";
 serviceContent.style.animationDuration="1s";
 serviceContent.innerText="Our Services";
 serviceContent.style.display="none";
-inContent.innerHTML="<li>App Development</li><br/> <li>Web Development </li><br/> <li>UI & UX Design</li> <br/> <li>Digital Marketing</li> <br/> <li>Support</li> <br/><li>Chemical Engineering</li>";
+inContent.innerHTML="<li>App Development</li><br/> <li>Web Development </li><br/> <li>UI & UX Design</li> <br/> <li>Digital Marketing</li> <br/> <li>Support</li>";
 var main=document.getElementById("main");
 var ele=document.getElementsByClassName("services");
 for(i=0;i<ele.length;i++){
