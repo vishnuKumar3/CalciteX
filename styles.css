@@ -13,6 +13,9 @@
     scroll-behavior:smooth;
 }
 
+::-webkit-scrollbar{width:10px;background:#15193d;}
+::-webkit-scrollbar-thumb{width:100%;height:8%;background:#eeb0df;border-radius:10px;}
+
 @font-face{
 font-family:leftTextfont;
 src:url('fonts/Audiowide-Regular.ttf');
@@ -175,7 +178,7 @@ color:white;
 margin-top:25%;
 }
 
-@media screen and (min-width:1500px){
+@media only screen and (min-width:1500px){
 #header ul #links{
 display:flex;
 flex-direction:row;
@@ -196,7 +199,7 @@ margin-left:33%;
 
 }
 
-@media screen and (max-width:1000px){
+@media only screen and (max-width:1000px){
 
 #headerImg{
 display:none;
