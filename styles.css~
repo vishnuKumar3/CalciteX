@@ -333,7 +333,7 @@ margin-right:2%;
 @keyframes rotateWheel{from{transform:rotate(0deg) translate(0px) rotate(0deg);} to{transform:rotate(360deg) translate(0px) rotate(360deg);}}
 #ourServices #one0{position:absolute;transform:rotate(50deg) translateY(180px) rotate(-50deg);}
 #ourServices #one1{position:absolute;transform:rotate(110deg) translateY(250px) rotate(-110deg);}
-#ourServices #one2{position:absolute;transform:rotate(175deg) translateY(300px) rotate(-175deg);}
+#ourServices #one2{position:absolute;transform:rotate(180deg) translateY(300px) rotate(-180deg);}
 #ourServices #one3{position:absolute;transform:rotate(250deg) translateY(250px) rotate(-250deg);}
 #ourServices #one4{position:absolute;transform:rotate(305deg) translateY(180px) rotate(-305deg);}
 /*position:absolute;transform:rotate(150deg) translateY(320px) rotate(-150deg);*/
