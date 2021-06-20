@@ -1216,7 +1216,7 @@ margin-right:10%;
 #contact-left{width:30%;height:100%;display:flex;margin-left:5%;align-items:center;color:#EEB0DF;font-size:80px;font-family:leftTextfont;}
 #contact-right{padding:0% 5% 0% 5%;width:65%;height:100%;font-family:blinker;}
 #contact-right form p:nth-child(1){font-size:30px;font-family:tomorrow;color:white;padding:20% 0% 5% 0%;}
-#contact-right input[type="text"],textarea{width:95%;padding:5% 0% 0% 1%;color:white;font-size:20px;background:none;border-bottom:1px solid white;}
+#contact-right input[type="text"],textarea{width:95%;padding:5% 0% 0% 1%;color:white;font-size:20px;background:none;border:1px solid white;}
 #contact-right input[type="submit"]{width:95%;padding:2% 0% 2% 0%;font-size:20px;margin-top:5%;background:#EEB0DF;color:black;cursor:pointer;border-radius:5px;}
 #contact-desc{display:flex;justify-content:space-between;margin-top:5%;color:white;font-size:20px;}
 
@@ -1239,3 +1239,4 @@ margin-right:10%;
 
 
 @keyframes mobile{from{width:0%;} to{width:100%;}}
+
