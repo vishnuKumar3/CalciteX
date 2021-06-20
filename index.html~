@@ -933,7 +933,7 @@ Trouble-free support is what we offer.
 document.oncontextmenu=context;
 document.onselectstart=select;
 function context(){
-return true;
+return false;
 }
 
 function select(){
