@@ -1265,7 +1265,7 @@ if(event.target.id.charAt(event.target.id.length-1)!=number){
 	needle.style.animationName="temp";
 	needle.style.animationDuration="1s";
 	var degree;
-	if(number==0){	needle.style.transform="rotate(0deg)";degree=10;}
+	if(number==0){degree=10;}
 	else if(number==1){degree=65;}
 	else if(number==2){degree=153;}
 	else if(number==3){degree=245;}
