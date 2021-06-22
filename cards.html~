@@ -1,0 +1,74 @@
+<!doctype html>
+<style>
+#card{width:28%;height:450px;border-radius:10px;transition:1s;}
+#card-front{border-radius:10px;background:linear-gradient(130deg,#00fb 25%,#0f05);display:flex;width:100%;height:100%;flex-direction:column;justify-content:flex-end;align-items:center;}
+#card-front p{font-size:30px;color:black;opacity:0;animation:zoom 2s;animation-fill-mode:both;}
+
+#card-back{overflow:hidden;border-radius:10px;opacity:1;width:100%;height:100%;border:1px solid #aaa;}
+#card-back img{width:100%;height:50%;border-radius:10px 10px 0px 0px;opacity:0;animation:zoom 2s;animation-fill-mode:both;}
+#card-content{display:flex;flex-direction:column;justify-content:space-around;width:94%;height:45%;margin:0% 3% 0% 3%;}
+#card-back #card-content p:nth-child(1){font-size:30px;color:black;opacity:0;animation:zoom 2s;animation-fill-mode:both;}
+#card-back #card-content p:nth-child(2){opacity:0;animation:zoom 2s;margin-top:-5%;animation-fill-mode:both;font-size:17px;line-height:25px;text-indent:10%;}
+#card-back #card-content a{transition:1s;text-decoration:none;opacity:0;animation:zoom 2s;animation-fill-mode:both;}
+
+#card-back a:hover{margin-left:2%;transition:1s;}
+
+@keyframes zoom{from{opacity:0;} to{opacity:1;}}
+@keyframes widthAnim{from{width:0%;} to{width:95%;}}
+
+#card-back{display:none;}
+#card:hover{transform:rotateY(180deg);transition:1s;}
+#card:hover #card-front{display:none;}
+#card:hover #card-back{display:block;transform:rotateY(-180deg);}
+</style>
+<div style="display:flex;justify-content:space-around;">
+
+<div id="card">
+<div id="card-front">
+<div id="text-front">
+<p>Software Development</p>
+</div>
+</div>
+<div id="card-back">
+<img src="images/work_app.jpeg"/>
+<div id="card-content">
+<p>Software Development</p>
+<p>We encourage you to build what you want to build,with technologies you love.We work on a lot of tools and projects.Here you enjoy your internship.</p>
+<a href="#">click here to apply >></a>
+</div>
+</div>
+</div>
+
+<div id="card">
+<div id="card-front">
+<div id="text-front">
+<p>Sales</p>
+</div>
+</div>
+<div id="card-back">
+<img src="images/work3.jpeg"/>
+<div id="card-content">
+<p>Sales</p>
+<p>We encourage you to build what you want to build,with technologies you love.We work on a lot of tools and projects.Here you enjoy your internship.</p>
+<a href="#">click here to apply >></a>
+</div>
+</div>
+</div>
+
+<div id="card">
+<div id="card-front">
+<div id="text-front">
+<p>Marketing</p>
+</div>
+</div>
+<div id="card-back">
+<img src="images/work_support.jpeg"/>
+<div id="card-content">
+<p>Marketing</p>
+<p>We encourage you to build what you want to build,with technologies you love.We work on a lot of tools and projects.Here you enjoy your internship.</p>
+<a href="#">click here to apply >></a>
+</div>
+</div>
+</div>
+
+</div>
