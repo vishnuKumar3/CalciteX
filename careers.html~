@@ -3,12 +3,16 @@
 <title>Careers | CalciteX</title>
 <style>
 *{font-family:sans-serif;}
-body,html{height:100%;}
-#top{height:50%;background:black;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;line-height:5%;}
-#top p:nth-child(1){font-size:60px;}
-#top p:nth-child(2){font-size:30px;}
+::-webkit-scrollbar{width:10px;background:white;}
+::-webkit-scrollbar-thumb{width:95%;height:10%;background:black;border-radius:10px;}
+body,html{height:100%;width:99.5%;}
+#top{height:60%;width:100%;position:absolute;top:0;left:0;background:black;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;line-height:5%;color:white;}
+#images{display:flex;flex-wrap:wrap;width:100%;height:100%;}
+#images img{width:25%;height:50%;opacity:0.4;}
+#top p:nth-child(2){font-size:60px;position:absolute;}
+#top p:nth-child(3){font-size:30px;position:absolute;margin-top:12%;}
 
-#test{width:100%;height:80%;margin-top:10%;overflow:hidden;}
+#test{width:100%;height:80%;margin-top:40%;overflow:hidden;}
 #test-slide{width:400%;display:flex;height:80%;}
 #test-content{width:25%;height:100%;display:flex;flex-direction:column;justify-content:space-around;align-items:center;}
 #test-content p{font-size:20px;width:60%;text-align:center;line-height:25px;}
@@ -21,17 +25,33 @@ body,html{height:100%;}
 @keyframes three{from{margin-left:-200%;} to{margin-left:-300%;}}
 
 #perks{width:80%;display:flex;flex-wrap:wrap;justify-content:space-between;height:120%;margin:10% 10% 0% 10%;}
-#perks-content{text-align:center;margin-bottom:3%;line-height:25px;width:45%;height:35%;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.perks-content{opacity:0;text-align:center;margin-bottom:3%;line-height:25px;width:45%;height:35%;display:flex;flex-direction:column;align-items:center;justify-content:center;}
 #perks-content p{color:#444}
 
-#bottom{margin:15% 20% 0% 20%;width:60%;height:80%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-bottom:10%;}
-#bottom-content{display:flex;flex-direction:column;justify-content:center;height:28%;margin-left:0%;width:100%;margin-bottom:1%;border:2px solid #ddd;border-radius:5px;padding:1% 1% 3% 1%;}
+#bottom{margin:20% 20% 0% 20%;width:60%;height:20%;padding-bottom:15%;}
+#bottom-box{width:100%;height:100%;display:flex;flex-direction:row;justify-content:space-between;align-items:center;}
+#bottom-content{display:flex;flex-direction:column;justify-content:flex-end;height:100%;margin-left:0%;width:30%;margin-bottom:1%;border:2px solid transparent;border-radius:5px;padding:1% 1% 3% 1%;}
 @media only screen and (min-width:1500px){
 #bottom-content{height:10%;}
+#test{height:50%;}
+#perks{height:80%;}
 }
+
+@keyframes zoom{from{transform:scale(0.8);opacity:0;} to{opacity:1;transform:scale(1);}}
 </style>
 
+<body onscroll="scrollFunction()">
 <div id="top">
+<div id="images">
+<img src="work_time.jpeg">
+<img src="work_app.jpeg">
+<img src="work_design.jpeg">
+<img src="work_support.jpeg">
+<img src="work.jpeg">
+<img src="work1.jpeg">
+<img src="work2.jpeg">
+<img src="work3.jpeg">
+</div>
 <p>Work @ CalciteX</p>
 <p>At CalciteX we are always looking for passionate and talented people</p>
 </div>
@@ -41,27 +61,27 @@ body,html{height:100%;}
 <div id="test-slide">
 
 <div id="test-content">
-<p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
 <i class="fa fa-user-circle-o"></i>
 <h2>Khushboo Bhatia</h2>
+<p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
 </div>
 
 <div id="test-content">
-<p>I have gained strong technical skills and applied them to real-world projects. With proper guidance, I have personally developed Applications for E-Commerce and linked them with Payment Gateways.  Since being in the Last year of my undergraduate degree, I feel confident after leading and developing a Major Project.</p>
 <i class="fa fa-user-circle-o"></i>
 <h2>Shivani Sharma</h2>
+<p>I have gained strong technical skills and applied them to real-world projects. With proper guidance, I have personally developed Applications for E-Commerce and linked them with Payment Gateways.  Since being in the Last year of my undergraduate degree, I feel confident after leading and developing a Major Project.</p>
 </div>
 
 <div id="test-content">
-<p>The Interview process was smooth after I Enchnaced my Web / App development skills. I was able to apply the skills I learned at my University; I was able to execute multiple projects in Python and C++; designed various Algorithms for Game development. My passion lies in Game development, and I plan to continue sharpening the skills I have acquired in this term.</p>
 <i class="fa fa-user-circle-o"></i>
 <h2>Sai Rohith Reddy</h2>
+<p>The Interview process was smooth after I Enchnaced my Web / App development skills. I was able to apply the skills I learned at my University; I was able to execute multiple projects in Python and C++; designed various Algorithms for Game development. My passion lies in Game development, and I plan to continue sharpening the skills I have acquired in this term.</p>
 </div>
 
 <div id="test-content">
-<p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
 <i class="fa fa-user-circle-o"></i>
 <h2>Khushboo Bhatia</h2>
+<p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
 </div>
 
 </div>
@@ -76,37 +96,37 @@ body,html{height:100%;}
 
 <div id="perks">
 
-<div id="perks-content">
+<div class="perks-content">
 <i class="fa fa-wrench" style="font-size:80px;color:#5064d0"></i>
 <h2>Build what you want to build</h2>
 <p>We encourage you to build what you want to build, with technologies you love. We work on a lot of tools and projects. You can join one that you find interesting or start something new of your own.</p>
 </div>
 
-<div id="perks-content">
+<div class="perks-content">
 <i class="fa fa-briefcase" style="font-size:80px;color:#5064d0"></i>
 <h2>Salary Benefits</h2>
 <p>We’re a revenue positive, a bootstrapped startup that pays above market rates, and higher salary hikes than most of the other companies.</p>
 </div>
 
-<div id="perks-content">
+<div class="perks-content">
 <i class="fa fa-heart" style="font-size:80px;color:#5064d0"></i>
 <h2>Flexible Vacation Policy</h2>
 <p>We believe in a flexible vacation policy. The idea: You’re free to take as much time off as you choose, as long as you get your job done – in time. It’s a focus on producing great results, rather than just putting in the hours.</p>
 </div>
 
-<div id="perks-content">
+<div class="perks-content">
 <i class="fa fa-headphones" style="font-size:80px;color:#5064d0"></i>
 <h2>A Relaxed, Tension Free Environment</h2>
 <p>We are a bunch of fun loving people who don’t like to be bossed around. Work from anywhere and whenever you want, as long as you get your job done. We value what you do, rather than when and where you do it.</p>
 </div>
 
-<div id="perks-content">
+<div class="perks-content">
 <i class="fa fa-handshake-o" style="font-size:80px;color:#5064d0"></i>
 <h2>Work On Bleeding Edge Tech</h2>
 <p>We are obsessed with Technology. We use bleeding edge tools to get stuff done and contribute to Open Source Projects. You get to learn, work and play around with the latest technologies that we use.</p>
 </div>
 
-<div id="perks-content">
+<div class="perks-content">
 <i class="fa fa-home" style="font-size:80px;color:#5064d0"></i>
 <h2>Good work-life balance</h2>
 <p>Your personal growth is vital to us, and we’ll give you everything you need to make it happen.</p>
@@ -118,7 +138,8 @@ body,html{height:100%;}
 
 <h2>Open Positions</h2>
 
-<div style="margin-top:5%;" id="bottom-content">
+<div id="bottom-box">
+<div id="bottom-content">
 <h2>Software Development</h2>
 <a href="https://forms.gle/4pSkmkoYtma6WJnm6">Submit Details</a>
 </div>
@@ -132,11 +153,30 @@ body,html{height:100%;}
 <h2>Human Resources</h2>
 <a href="https://forms.gle/YVyuKJspe92vTRQk7">Submit Details</a>
 </div>
+</div>
 
 </div>
 
+</body>
+
 
 <script>
+
+function scrollFunction(){
+var perk=document.getElementsByClassName("perks-content");
+var perks=document.getElementById("perks");
+var ele=document.documentElement;
+if(perks.offsetTop-ele.scrollTop<200){
+	for(i=0;i<perk.length;i++){
+		perk[i].style.animationName="zoom";
+		perk[i].style.animationDuration="2s";
+		perk[i].style.animationTimingFunciton="linear";
+		perk[i].style.animationFillMode="both";
+		perk[i].style.animationDelay=i/3+"s";
+	}
+}
+}
+
 var interval=window.setInterval(testi,5000);
 var index=-1;
 var test=document.getElementById("test-slide");
