@@ -3,8 +3,8 @@
 <title>Careers | CalciteX</title>
 <style>
 *{font-family:sans-serif;}
-::-webkit-scrollbar{width:10px;background:white;}
-::-webkit-scrollbar-thumb{width:95%;height:10%;background:black;border-radius:10px;}
+/*::-webkit-scrollbar{width:5px;background:white;}*/
+/*::-webkit-scrollbar-thumb{width:95%;height:10%;background:black;border-radius:10px;}*/
 body,html{height:100%;width:99.5%;}
 #top{height:60%;width:100%;position:absolute;top:0;left:0;background:black;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;line-height:5%;color:white;}
 #images{display:flex;flex-wrap:wrap;width:100%;height:100%;}
@@ -37,6 +37,35 @@ body,html{height:100%;width:99.5%;}
 #test{height:50%;}
 #perks{height:80%;}
 }
+
+.card{width:28%;height:65%;margin-top:5%;border-radius:10px;transition:1s;}
+.card-front{border-radius:10px;background:linear-gradient(130deg,#00fb 25%,#0f05);display:flex;width:100%;height:100%;flex-direction:column;justify-content:flex-end;align-items:center;}
+.card-front p{font-size:30px;color:black;opacity:0;animation:opacityAnim 2s;animation-fill-mode:both;}
+
+.card-back{overflow-y:scroll;border-radius:10px;opacity:1;width:100%;height:100%;border:1px solid #aaa;}
+.card-back img{width:100%;height:50%;border-radius:10px 10px 0px 0px;opacity:0;animation:opacityAnim 2s;animation-fill-mode:both;}
+#card-content{opacity:0;animation:opacityAnim 2s;animation-fill-mode:both;display:flex;flex-direction:column;justify-content:space-around;width:94%;padding:0% 3% 6% 3%;}
+.card-back #card-content p:nth-child(1){font-size:30px;color:black;}
+.card-back #card-content p:nth-child(2){margin-top:-5%;font-size:17px;line-height:25px;text-indent:10%;}
+.card-back #card-content a{transition:1s;text-decoration:none;}
+
+.card-back a:hover{margin-left:2%;transition:1s;}
+#bottom-cards{height:100%;margin-top:3%;display:flex;justify-content:space-around;}
+
+@keyframes opacityAnim{from{opacity:0;} to{opacity:1;}}
+@keyframes widthAnim{from{width:0%;} to{width:95%;}}
+
+.card-back{display:none;}
+/*.card:hover{transform:rotateY(180deg);transition:1s;}
+.card:hover .card-front{display:none;}
+.card:hover .card-back{display:block;transform:rotateY(-180deg);}*/
+
+@media only screen and (min-width:1500px){
+#bottom-cards{height:90%;}
+#card{height:65%;width:25%;}
+#card-content{height:43%;}
+}
+
 
 @keyframes zoom{from{transform:scale(0.8);opacity:0;} to{opacity:1;transform:scale(1);}}
 </style>
@@ -135,7 +164,7 @@ body,html{height:100%;width:99.5%;}
 
 </div>
 
-<div id="bottom">
+<!--<div id="bottom">
 
 <h2>Open Positions</h2>
 
@@ -156,6 +185,59 @@ body,html{height:100%;width:99.5%;}
 </div>
 </div>
 
+</div>-->
+
+<h1 style="text-align:center;margin-top:15%;">Open Positions</h1>
+<div id="bottom-cards">
+
+<div class="card">
+<div class="card-front">
+<div id="text-front">
+<p>Software Development</p>
+</div>
+</div>
+<div class="card-back">
+<img src="images/work_app.jpeg"/>
+<div id="card-content">
+<p>Software Development</p>
+<p>We at CalciteX encourage you to build what you want to build,with technologies you love.We work on a lot of tools and projects.Here you enjoy your internship.</p>
+<a href="https://forms.gle/4pSkmkoYtma6WJnm6">click here to apply >></a>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-front">
+<div id="text-front">
+<p>Business Development</p>
+</div>
+</div>
+<div class="card-back">
+<img src="images/work3.jpeg"/>
+<div id="card-content">
+<p>Business Development</p>
+<p>We encourage you to build what you want to build,with technologies you love.We work on a lot of tools and projects.Here you enjoy your internship.</p>
+<a href="https://forms.gle/nTjocdbKgomHH4SA7">click here to apply >></a>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="card-front">
+<div id="text-front">
+<p>Marketing</p>
+</div>
+</div>
+<div class="card-back">
+<img src="images/work_support.jpeg"/>
+<div id="card-content">
+<p>Marketing</p>
+<p>We at CalciteX provide businesses of all sizes with an opportunity to market their brand 24/7 at a low cost. from startups to medium-sized enterprises to multiple-location companies</p>
+<a href="https://forms.gle/YVyuKJspe92vTRQk7">click here to apply >></a>
+</div>
+</div>
+</div>
+
 </div>
 
 </body>
@@ -167,6 +249,8 @@ function scrollFunction(){
 var perk=document.getElementsByClassName("perks-content");
 var perks=document.getElementById("perks");
 var ele=document.documentElement;
+var cards=document.getElementById("bottom-cards");
+
 if(perks.offsetTop-ele.scrollTop<200){
 	for(i=0;i<perk.length;i++){
 		perk[i].style.animationName="zoom";
@@ -176,6 +260,32 @@ if(perks.offsetTop-ele.scrollTop<200){
 		perk[i].style.animationDelay=i/3+"s";
 	}
 }
+
+if(cards.offsetTop-ele.scrollTop<200 & window.innerWidth>1500){
+	window.setTimeout(cardsFun,700);
+}
+
+if(cards.offsetTop-ele.scrollTop<100 & window.innerWidth<1500){
+	window.setTimeout(cardsFun,700);
+}
+
+}
+
+function cardsFun(){
+var ele=document.documentElement;
+var cards=document.getElementById("bottom-cards");
+var card=document.getElementsByClassName("card");
+var cardFront=document.getElementsByClassName("card-front");
+var cardBack=document.getElementsByClassName("card-back");
+	for(i=0;i<card.length;i++){
+		card[i].style.transform="rotateY(180deg)";
+		card[i].style.transition="1s";
+		card[i].style.transitionDelay=i/3+"s";
+		cardFront[i].style.display="none";
+		cardBack[i].style.display="block";
+		cardBack[i].style.transform="rotateY(-180deg)";
+		cardBack[i].style.transition="1s";
+	}
 }
 
 var interval=window.setInterval(testi,5000);
