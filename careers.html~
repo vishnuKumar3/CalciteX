@@ -40,7 +40,7 @@ body,html{height:100%;width:99.5%;}
 }
 
 .card{width:28%;height:65%;margin-top:5%;border-radius:10px;transition:1s;}
-.card-front{border-radius:10px;background:#ddd/*linear-gradient(130deg,#00fb 25%,#0f05)*/;display:flex;width:100%;height:100%;flex-direction:column;justify-content:center;align-items:center;}
+.card-front{border-radius:10px;background:#eee/*linear-gradient(130deg,#00fb 25%,#0f05)*/;display:flex;width:100%;height:100%;flex-direction:column;justify-content:center;align-items:center;}
 .card-front p{font-size:30px;color:black;opacity:0;animation:opacityAnim 2s;animation-fill-mode:both;}
 
 .card-back{overflow-y:scroll;border-radius:10px;opacity:1;width:100%;height:100%;border:1px solid #aaa;}
@@ -266,7 +266,7 @@ var cards=document.getElementById("bottom-cards");
 if(perks.offsetTop-ele.scrollTop<200){
 	for(i=0;i<perk.length;i++){
 		perk[i].style.animationName="zoom";
-		perk[i].style.animationDuration="0.5s";
+		perk[i].style.animationDuration="2s";
 		perk[i].style.animationTimingFunciton="linear";
 		perk[i].style.animationFillMode="both";
 		perk[i].style.animationDelay=i/6+"s";
