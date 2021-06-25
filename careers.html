@@ -14,6 +14,7 @@ body,html{height:100%;width:99.5%;}
 
 #test{width:100%;height:80%;margin-top:40%;overflow:hidden;}
 #test-slide{width:400%;display:flex;height:80%;}
+#test-image{width:7%;height:21%;border:1px solid transparent;border-radius:100%;background-position:top;background-size:100%;100%;}
 #test-content{width:25%;height:100%;display:flex;flex-direction:column;justify-content:space-around;align-items:center;}
 #test-content p{font-size:20px;width:60%;text-align:center;line-height:25px;}
 #test-content i{font-size:80px;}
@@ -61,6 +62,7 @@ body,html{height:100%;width:99.5%;}
 .card:hover .card-back{display:block;transform:rotateY(-180deg);}*/
 
 @media only screen and (min-width:1500px){
+#test-image{width:7%;height:30%;}
 #bottom-cards{height:90%;}
 #card{height:65%;width:25%;}
 #card-content{height:43%;}
@@ -91,25 +93,29 @@ body,html{height:100%;width:99.5%;}
 <div id="test-slide">
 
 <div id="test-content">
-<i class="fa fa-user-circle-o"></i>
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('testimonials/test1.jpeg')" id="test-image"></div>
 <h2>Khushboo Bhatia</h2>
 <p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
 </div>
 
 <div id="test-content">
-<i class="fa fa-user-circle-o"></i>
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('testimonials/test2.jpeg')" id="test-image"></div>
 <h2>Shivani Sharma</h2>
 <p>I have gained strong technical skills and applied them to real-world projects. With proper guidance, I have personally developed Applications for E-Commerce and linked them with Payment Gateways.  Since being in the Last year of my undergraduate degree, I feel confident after leading and developing a Major Project.</p>
 </div>
 
 <div id="test-content">
-<i class="fa fa-user-circle-o"></i>
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('testimonials/test3.jpeg')" id="test-image"></div>
 <h2>Sai Rohith Reddy</h2>
 <p>The Interview process was smooth after I Enchnaced my Web / App development skills. I was able to apply the skills I learned at my University; I was able to execute multiple projects in Python and C++; designed various Algorithms for Game development. My passion lies in Game development, and I plan to continue sharpening the skills I have acquired in this term.</p>
 </div>
 
 <div id="test-content">
-<i class="fa fa-user-circle-o"></i>
+<!--<i class="fa fa-user-circle-o"></i>-->
+<div style="background-image:url('test1.jpeg')" id="test-image"></div>
 <h2>Khushboo Bhatia</h2>
 <p>This organization provided me with an excellent platform to establish my skills and knowledge in the corporate world. Even though I was a fresher, I felt assured of learning new skills, mainly programming languages like Python and Java. I am now confident of my potential and confident about my Software Development career.</p>
 </div>
@@ -244,6 +250,12 @@ body,html{height:100%;width:99.5%;}
 
 
 <script>
+
+document.oncontextmenu=context;
+
+function context(){
+return false;
+}
 
 function scrollFunction(){
 var perk=document.getElementsByClassName("perks-content");
