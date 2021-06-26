@@ -62,7 +62,7 @@ body,html{height:100%;width:99.5%;}
 .card:hover .card-back{display:block;transform:rotateY(-180deg);}*/
 
 @media only screen and (min-width:1500px){
-#test-image{width:7%;height:30%;}
+#test-image{width:8%;height:35%;}
 #bottom-cards{height:90%;}
 #card{height:65%;width:25%;}
 #card-content{height:43%;}
@@ -203,7 +203,7 @@ body,html{height:100%;width:99.5%;}
 </div>
 </div>
 <div class="card-back">
-<img src="images/work_app.jpeg"/>
+<img src="images/software.jpg"/>
 <div id="card-content">
 <p>Software Development</p>
 <p>We at CalciteX encourage you to build what you want to develop, with technologies you love. We work on a lot of tools and projects. We are a platform where you can level up your Coding game!</p>
@@ -219,10 +219,10 @@ body,html{height:100%;width:99.5%;}
 </div>
 </div>
 <div class="card-back">
-<img src="images/work3.jpeg"/>
+<img src="images/business.jpg"/>
 <div id="card-content">
 <p>Business Development</p>
-<p>We encourage you to build what you want to build,with technologies you love.We work on a lot of tools and projects.Here you enjoy your internship.</p>
+<p>Hone your skills in pursuing strategic opportunities. Cultivate valuable partnerships and professional relationships with our clients. Provide value to newly identified markets.</p>
 <a href="https://forms.gle/nTjocdbKgomHH4SA7">click here to apply >></a>
 </div>
 </div>
@@ -231,14 +231,14 @@ body,html{height:100%;width:99.5%;}
 <div class="card">
 <div class="card-front">
 <div id="text-front">
-<p>Marketing</p>
+<p>Human Resources</p>
 </div>
 </div>
 <div class="card-back">
-<img src="images/work_support.jpeg"/>
+<img src="images/resources.png"/>
 <div id="card-content">
-<p>Marketing</p>
-<p>We at CalciteX provide businesses of all sizes with an opportunity to market their brand 24/7 at a low cost. from startups to medium-sized enterprises to multiple-location companies</p>
+<p>Human Resources</p>
+<p>Source, Hire and Engage with Newly recruited Interns / Experienced Professionals. Find out the training they need, make them used to the working environment and Increase the productivity by assigning the right person the right task.</p>
 <a href="https://forms.gle/YVyuKJspe92vTRQk7">click here to apply >></a>
 </div>
 </div>
@@ -254,7 +254,7 @@ body,html{height:100%;width:99.5%;}
 document.oncontextmenu=context;
 
 function context(){
-return true;
+return false;
 }
 
 function scrollFunction(){
@@ -266,7 +266,7 @@ var cards=document.getElementById("bottom-cards");
 if(perks.offsetTop-ele.scrollTop<200){
 	for(i=0;i<perk.length;i++){
 		perk[i].style.animationName="zoom";
-		perk[i].style.animationDuration="2s";
+		perk[i].style.animationDuration="1.5s";
 		perk[i].style.animationTimingFunciton="linear";
 		perk[i].style.animationFillMode="both";
 		perk[i].style.animationDelay=i/6+"s";
